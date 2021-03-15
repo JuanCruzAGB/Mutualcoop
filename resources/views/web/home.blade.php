@@ -241,9 +241,9 @@ Mutualcoop
 {{ no_captcha()->script() }}
 {{ no_captcha()->getApiScript() }}
 <script>
-    grecaptcha.ready(() => {
-        window.noCaptcha.render('login', (token) => {
-            document.querySelector('#g-recaptcha-response').value = token;
+    grecaptcha.ready(function() {
+        grecaptcha.execute('6LeWkKMUAAAAAAPHyfHEbW6GM1SU9al_y6c8XKZB', {action: 'homepage'}).then(function(token) {
+            $('.support-g-recaptcha-response').prepend('<input type="hidden" name="g-recaptcha-response" value="' + token + '">');
         });
     });
 </script>
