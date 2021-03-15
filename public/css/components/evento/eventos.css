@@ -1,0 +1,114 @@
+.evento {
+    position: relative;
+    justify-items: center;
+}
+
+.dashboard .evento {
+    background-color: white;
+    border-radius: .25rem;
+}
+
+.evento-descripcion {
+    min-height: 4rem;
+}
+
+.eventos .dia {
+    line-height: 85%;
+}
+
+.evento .fecha {
+    background-color: var(--color-uno);
+    transition: 500ms;
+}
+
+.evento .fecha .dia {
+    height: 1.6rem;
+}
+
+.evento .private {
+    position: absolute;
+    text-align: right;
+    padding: .5rem;
+    top: 0;
+    right: 0;
+    width: 6rem;
+    color: var(--color-cuatro);
+    height: 3rem;
+    /* line-height: 2rem; */
+    background-color: var(--color-tres);
+    clip-path: polygon(0 0, 100% 0, 100% 100%);
+}
+
+.evento .private .center {
+    color: #222;
+    font-size: 1.2rem;
+    opacity: 0;
+    transition: 500ms;
+}
+
+.evento:hover .private .icon {
+    animation: lock infinite 1500ms;
+}
+
+.eventos_proximos .private {
+    width: 100%;
+    height: 100%;
+    transition: 500ms;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    color: var(--color-cuatro);
+    clip-path: none;
+    font-size: 2rem;
+    opacity: 0;
+}
+
+.eventos_proximos .evento:hover .private {
+    opacity: 1;
+}
+
+.eventos_proximos .private-text{
+    transition: 500ms;
+}
+
+.eventos_proximos .evento:hover .private-text{
+    opacity: 0;
+}
+
+.eventos-card-image figure {
+    width: 100%;
+    height: 15rem;
+    overflow: hidden;
+}
+
+.eventos-card-image img:hover {
+    transform: scale(1.15);
+}
+
+.eventos-card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 500ms;
+}
+
+/* MD */
+
+@media(min-width: 768px) {
+    /**/
+}
+
+
+/* LG */
+
+@media(min-width: 1024px) {
+    /**/
+}
+
+
+/* XL */
+
+@media(min-width: 1200px) {
+    /**/
+}

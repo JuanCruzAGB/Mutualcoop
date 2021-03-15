@@ -1,0 +1,1014 @@
+.sidenav{
+    z-index: 99999;
+    width: 12rem;
+}
+
+.nav-wrapper a{
+    font-size: 1.7rem;
+}
+.nav-form input{
+    color: #fff !important;
+}
+
+.nav-extended{
+    padding-bottom: 0;
+}
+
+.ingresar{
+    display: none;
+}
+
+.iniciarIndex{
+    background-color: #fff;
+    color: #ee6e73;
+    position: absolute;
+    right: -.7rem;   
+    margin-top: .7rem;
+    margin-left: 1rem;
+    padding: 0.5rem;
+    padding-top: 0;
+    outline: none;
+}
+
+.iniciarIndex:focus{
+    background-color: #fff;
+}
+
+.iniciarIndex:hover{
+    background-color: #fff;
+}
+
+.nav-form .input-field input{
+    border-bottom: 1px solid #fff !important;
+    }
+
+
+.input-field input[type=password]:focus+label {
+    color: #fff !important;
+}
+
+.input-field input[type=text]:focus + label {
+    color: #fff !important;
+}
+
+.input-field input[type=text]:focus {
+    border-bottom: 1px solid #fff !important;
+    box-shadow: 0 0 0 0 #fff !important;
+  }
+
+.slider{
+    margin-top: 0;
+}
+
+.slider h3{
+    color: #97969B;
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+
+.input-field input[type=email]:focus {
+    border-bottom: 1px solid #fff !important;
+    box-shadow: 0 1px 0 0 #fff;
+    
+}
+
+.autofillLogin .error{
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    /* margin-left: 3rem; */
+    font-weight: bold;
+    left: -1.5rem;
+
+    /* top: 100%; */
+}
+.ingresar .input-field{
+    bottom: 1.6rem;
+}
+
+.ingresar .error{
+    bottom: -2rem;
+}
+
+
+
+.autofillLogin .input-field:first-of-type,
+.autofillLogin .input-field:nth-of-type(2){
+    position: relative;
+    /* margin-bottom: 1.5rem; */
+}
+
+.ingresar .input-field:nth-of-type(2){
+    margin-bottom: 0 !important;
+}
+
+.ingresar .error .input-field:nth-of-type(2){
+    background-color: #fff;
+}
+
+.contacto .error{
+    padding: 0;
+    position: absolute;
+    /* color: red; */
+    margin-left: 3rem;
+    font-weight: bold;
+    top: 100%;
+    text-align: left;
+}
+
+.contacto .input-field:first-of-type,
+.contacto .input-field:nth-of-type(2),
+.contacto .input-field:nth-of-type(3),
+.contacto .input-field:nth-of-type(4){
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.contacto input:focus{
+    color: #000 !important;
+}
+
+.input-field input[type=password]:focus {
+    border-bottom: 1px solid #fff !important;
+    box-shadow: 0 0 0 0 #fff !important;
+}
+
+.input-field .prefix.active {
+    color: #fff;
+}
+
+/* .input-field input{
+    color: #fff;
+} */
+
+/* obras */
+
+#obras{
+    padding: 0;
+}
+
+#obras h2{
+    margin-top: 2rem;
+    color: #000;
+    background-color:#ccc;
+    padding: .5rem; 
+    text-align: center;   
+    font-size: 2rem
+}
+
+.obras h2{
+    color: #ee6e73 !important;
+    background-color: #fff !important;
+}
+
+.obras p{
+    height: 10rem;
+    margin-bottom: .3rem;
+}
+
+.obras a{
+    color: #ee6e73;
+    border-left: 5px solid#ee6e73;
+    padding-left: 5px;
+    margin-top: .5rem;
+    margin-left: 1.5rem;
+}
+
+.obras img{
+    margin-top: 2rem;
+    width: 300px;
+    height: 230px;
+    object-fit: contain;
+}
+
+/* noticias */
+
+
+
+.noticias{
+    margin: 5rem 0 2rem;
+}
+
+.noticia{
+    padding-bottom: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+#noticias{
+    padding: 0;
+}
+
+#noticias h2{
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    color: #fff;
+    background-color:#ee6e73;
+    padding: .5rem; 
+    text-align: center;   
+    font-size: 2rem
+}
+
+.noticia:last-of-type{
+    margin-bottom: 0;
+}
+
+.noticia img{
+    cursor: default;
+    width: 100%;
+}
+
+.noticia p{
+    text-overflow: ellipsis;
+	/* white-space: nowrap;  */
+    overflow: hidden;
+    max-height: 6.5rem;
+}
+
+.noticia a{
+    display: block;
+    padding: 0 1.5rem;
+}
+
+.test{
+    margin: 1rem 0;
+}
+
+.test h3{
+    font-size: 2rem;
+    color: #F27274;
+    margin-bottom: 1.5rem;
+    padding: 0;
+}
+
+.test h4{
+    font-size: 1.5rem;
+    color: #6b6b6d;
+    text-align: left;
+    min-height: 4rem;
+}
+
+.sinSubtitulo{
+    color: transparent !important;
+}
+
+/* .datosNoticia p{
+    padding: 0;
+} */
+
+.datosNoticia span{
+    margin-top: 2rem;
+    color: #AAAAAB;
+    padding: 0;
+    float: left;
+}
+
+.datosNoticia a{
+    margin-top: 2rem;
+    text-align: right;
+    float: right;
+    color: #F27274;
+    padding: 0;
+    padding-left: 0.5rem;
+    border-left: 5px solid #F27274;
+}
+
+
+.pagination{
+    text-align: center;
+    color: #fff;
+}
+
+
+/* eventos */
+
+.evento{
+    padding-bottom: 1.5rem;
+}
+
+#eventos{
+    padding: 0;
+}
+
+#eventos h2{
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    color: #7A7B7E;
+    background-color: #E0E1E3;
+    padding: .5rem; 
+    text-align: center;   
+    font-size: 2rem;
+}
+
+.links{
+    margin: 0 1.8rem;
+}
+
+#agendaDatos h2{
+    background: none;
+    font-size: 1.7rem;
+    color: #F27274;
+    padding-left: 1.8rem;
+    text-align: left;
+}
+
+#agendaDatos{
+    margin-top: 3rem;
+    display: flex;
+}
+
+#agendaDatos span{
+    padding: 0;
+    margin-left: 1.7rem;
+    color: #757577;
+}
+
+#agendaDatos a:first-of-type{
+    margin-top: 1rem;
+    color: #F27274;
+    border-left: 3px solid #F27274;
+    padding: 0 0 0 0.5rem;
+}
+
+#agendaDatos a:last-of-type{
+    color: #fff;
+    background-color: #6F7073;
+    width: 7.5rem;
+    margin-top: 1rem;
+}
+
+#agendaDatos div:first-of-type{
+    flex-basis: 35%;
+}
+
+#agendaDatos div:last-of-type{
+    flex-basis: 65%;
+}
+
+#agendaDatos .divFecha{
+    border-right: 2px solid #7A7B7E;
+    padding-right: 1rem;
+}
+
+#agendaDatos .fecha{
+    font-size: 5rem;
+    margin-top: 2rem;
+    display: block;
+    text-align: center;
+    line-height: 3.0rem;
+}
+
+#agendaDatos .fecha:last-of-type{
+    margin-top: 0;
+    font-size: 2rem;
+    display: block;
+    text-align: center;
+}
+
+.evento a{
+    display: block;
+    padding: 0 1.5rem;
+}
+
+
+/* contacto */
+
+#contacto{
+    padding: 0;
+}
+
+#contacto h2{
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+    color: #ffffff;
+    background-color: #ee6e73;
+    padding: .5rem; 
+    text-align: center;   
+    font-size: 2rem
+}
+
+/* label color */
+
+
+[type="checkbox"] + span:not(.lever):before,
+[type="checkbox"]:not(.filled-in) + span:not(.lever):after {
+  border: 2px solid #fff;
+}
+
+[type="checkbox"]:checked + span:not(.lever):before {
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+  }
+
+#recordar{
+    color: #fff;
+    margin-left: .6rem;
+    top: 2rem;
+    left: -1rem;
+    z-index: 9999;
+}
+
+.ingresar label{
+    color: #fff;
+  }
+
+#ingresarBtn{
+    width: 6rem;
+    margin: 0;
+    position: relative;
+    left: 0rem;;
+    top: -1rem;
+}
+
+#recordar span{
+    left: 7rem;
+    bottom: -.5rem;
+    position: absolute;
+}
+
+.recordar{
+    position: relative;
+    top: 10rem;
+}
+  
+/* label del password al hacerle focus */
+  
+.contacto .input-field{
+    width: 92% !important;
+    padding-left: 2.5rem;
+}
+  
+.contacto .input-field label {
+color: #000;
+padding-left: 1.8rem;
+}
+
+.contacto .input-field input[type=text]:focus + label {
+color: #000;
+}
+
+.contacto .input-field input[type=text]:focus {
+border-bottom: 1px solid #000 !important;
+box-shadow: 0 0 0 0 #000 !important;
+}
+
+.contacto .input-field input[type=email]:focus + label {
+color: #000 !important;
+}
+
+.contacto .input-field input[type=email]:focus {
+border-bottom: 1px solid #000 !important;
+box-shadow: 0 0 0 0 #000 !important;
+}
+
+
+.contacto .input-field input[type=tel]:focus + label {
+color: #000 !important;
+}
+
+.contacto .input-field input[type=tel]:focus {
+border-bottom: 1px solid #000 !important;
+box-shadow: 0 0 0 0 #000 !important;
+}
+
+.contacto .input-field textarea:focus + label {
+color: #000 !important;
+}
+
+.contacto .input-field textarea:focus {
+border-bottom: 1px solid #000 !important;
+box-shadow: 0 0 0 0 #000 !important;
+}
+
+.contacto .input-field .prefix.active {
+color: #039be5;
+}
+
+.contacto .btn-small {
+color: #ee6e73;
+}
+
+.contacto .btn-small i{
+position: relative;
+top: 0.3rem;
+} 
+
+.contacto .divSubmit{
+margin-bottom: 0;
+display: flex;
+justify-content: center;
+margin-top: 1.2rem;
+}
+
+.modalSuscripción{
+    position: relative;
+}
+
+.modalSuscripción > div{
+    overflow: hidden;
+}
+
+.newsClose{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.newsClose i{
+    font-size: 2rem;
+}
+
+/* media > 700px */
+
+@media screen and (min-width: 600px){
+    #mobile-demo{
+        width: 12rem;
+    }
+
+    .ul-nav{
+        margin-right: 5rem;
+    }
+
+    .ul-nav a{
+        font-size: 1.3rem;
+    }
+
+    .iniciarIndex{
+        position: absolute;
+        right: -.7rem;   
+        margin-top: 1.1rem;
+        margin-left: 1rem;
+        padding: 0.5rem;
+        padding-top: 0;
+        outline: none;
+    }
+    
+    .obras a{
+        margin-top: 1rem;
+    } 
+
+    .contacto{
+        display: flex;
+    }
+
+    .contacto .divSubmit{
+        margin-top: 2rem;
+    }
+
+    .sidenav{
+        width: 40%;
+        z-index: 99999;
+    }
+    
+    .test{
+        margin: 5rem 0;
+        max-height: 25rem;
+    }
+
+    .test h3, h4{
+        margin-left: 7rem;
+    }
+
+    .test h4{
+        margin-bottom: 3rem;
+        min-height: 4rem;
+    }
+
+    .test figure{
+        width: 500px;
+    }
+
+    .datosNoticia{
+        margin-top: 2rem;
+    }
+
+    .datosNoticia p{
+        margin-left: 4.5rem;
+        text-align: left;
+        line-height: 2rem;
+        min-height: 4rem;
+        max-height: 4rem;
+        overflow: hidden;
+    }
+
+    .datosNoticia span{
+        margin-left: 6rem;
+    }
+
+    .datosNoticia a{
+        margin-right: 5rem;
+    }
+
+    #recordar{
+        left: .2rem;
+    }
+    
+    #ingresarBtn{
+        width: 10rem;
+        position: relative;
+        bottom: 2.5rem;
+        margin-bottom: 4rem;
+    }
+
+    #recordar span{
+        left: -.8rem;
+    }
+
+    #ingresarBtn{
+        width: 9rem;
+        margin: 0;
+        position: relative;
+        top: -1.5rem;
+    }
+
+    .links{
+        display: flex;
+        justify-content: space-between;
+        margin-right: 15rem;
+    }
+
+    .test h3{
+        line-height: 2rem;
+        min-height: 4rem;
+        max-height: 4rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+
+  @media screen and (min-width: 992px){   
+      
+    .formRow{
+        margin-bottom: 0;
+    }
+
+    .ingresar div{
+        margin-top: 1rem;
+    }
+
+    .ingresar #ingresarBtn{
+        margin-bottom: 2rem !important;
+    }
+
+    .recordarDiv{
+        margin-right: 1rem;
+        
+    }
+
+    #recordar span{
+        left: -1.8rem;
+        bottom: 0;
+        top: -4.5rem;
+    }
+
+    .ul-nav{
+        margin-right: 10rem;
+    }    
+
+    .slider{
+        display: block;
+        bottom: 10px;
+        z-index: -9999;
+    }
+
+    .slider li:nth-of-type(2) h3{
+        position: relative;
+        left: 5rem;
+     }
+
+    .slider li:last-of-type h3{
+        position: relative;
+        left: 4rem;
+        top: 10rem;
+     }
+
+    .slider li:last-of-type h3{
+        position: relative;
+        left: 6rem;
+        top: 10rem;
+     }
+
+    .obras h2{
+        text-align: center;
+        padding: 0;
+        font-size: 2rem
+    }
+
+    .test h3, h4{
+        margin-left: 2.5rem;
+    }
+
+    .test h4{
+        margin-bottom: 3rem;
+        height: 4rem;
+    }
+
+    .test figure{
+        width: 400px;
+    }
+
+    .datosNoticia{
+        margin-top: 2rem;
+    }
+
+    .datosNoticia p{
+        margin-left: 1rem;
+        text-align: left;
+    }
+
+    .datosNoticia span{
+        margin-left: 2.5rem;
+    }
+
+    .datosNoticia a{
+        margin-right: 3rem;
+    }
+
+    .test{
+        margin: 2.5rem 0;
+        max-height: 25rem;
+    }
+
+    .datosNoticia{
+        margin-top: 3rem;
+    }
+
+    .ingresarDiv{
+        bottom: 3.5rem;
+    }
+    
+    #agendaDatos div:first-of-type{
+        flex-basis: 35%;
+    }
+    
+    #agendaDatos div:last-of-type{
+        flex-basis: 65%;
+    }
+
+    .links{
+        max-height: 2.5rem;
+        margin-right: 1rem;
+    }
+
+    #recordar{
+        position: relative;
+        top: 0;
+    }
+
+    .nav-extended .no-logueado{
+        height: 14rem !important;
+    }
+
+    .autofillLogin .input-field:first-of-type,
+    .autofillLogin .input-field:nth-of-type(2){
+    margin-bottom: 0;
+    }
+
+    .ul-nav{
+        position: relative;
+        left: 5.5rem;
+    }
+
+    .test figure img{
+        width: 460px;
+        height: 300px;
+        object-fit: cover;
+    }
+    .ul-nav a{
+        font-size: 1.1rem;
+    }
+    
+  }
+
+  @media screen and (min-width: 1200px){
+
+    .nav-ul a{
+        font-size: 1.1rem;
+    }
+
+    .nav-ul{
+        float: right;
+    }
+
+    #recordar span{
+        top: -4.4rem;
+        left: -1.5rem !important;
+    }
+
+    .slider{
+        display: block;
+    }
+
+    .slider li:nth-of-type(1) h3{
+        position: relative;
+        right: 5rem;
+     }
+
+    .slider li:nth-of-type(2) h3{
+        position: relative;
+        left: 5rem;
+     }
+
+    .slider li:last-of-type h3{
+        position: relative;
+        left: 4rem;
+        top: 10rem;
+     }
+
+    .test h3, h4{
+        margin-left: 3.1rem;
+    }
+
+    .test h4{
+        margin-bottom: 3rem;
+        height: 4rem;
+    }
+
+    .datosNoticia{
+        margin-top: 2rem;
+    }
+
+    .datosNoticia p{
+        width: 90%;
+        margin-left: 2rem;
+        text-align: left;
+    }
+
+    .datosNoticia span{
+        margin-left: 3.4rem;
+    }
+
+    .datosNoticia a{
+        margin-right: 3.8rem;
+    }
+
+    .test{
+        margin: 2.5rem 0;
+        max-height: 25rem;
+    }
+
+    .datosNoticia{
+        margin-top: 3rem;
+    }
+
+    #agendaDatos h2{
+        background: none;
+        font-size: 1.7rem;
+        color: #F27274;
+        flex-basis: 100%;
+        padding-left: 1.8rem;
+        text-align: left;
+    }
+    
+    #agendaDatos{
+        display: flex;
+        margin-top: 3rem;
+    }
+    
+    #agendaDatos span{
+        padding: 0;
+        margin-left: 2rem;
+        color: #757577;
+        flex-basis: 100%;
+    }
+    
+    #agendaDatos a:first-of-type{
+        margin-top: 1rem;
+        color: #F27274;
+        border-left: 3px solid #F27274;
+        padding: 0 0 0 0.5rem;
+    }
+    
+    #agendaDatos a:last-of-type{
+        color: #fff;
+        background-color: #6F7073;
+        width: 7.5rem;
+        margin-top: 1rem;
+    }
+    
+    #agendaDatos div:first-of-type{
+        flex-basis: 35%;
+    }
+    
+    #agendaDatos div:last-of-type{
+        flex-basis: 65%;
+    }
+
+    .ingresarDiv{
+        bottom: 3.5rem;
+    }    
+
+    #recordar{
+        position: relative;
+        top: 0;
+        left: -.5rem;
+    }
+
+    .autofillLogin .input-field:first-of-type,
+    .autofillLogin .input-field:nth-of-type(2){
+    margin-bottom: 0;
+    }
+
+    #recordar span{
+        left: -0.2rem;
+    }
+
+    .links{
+        margin-right: 9.5rem;
+    }   
+}
+
+@media screen and (min-width: 1700px){
+    
+    .ul-nav a{
+        font-size: 1.1rem;
+    }
+
+    .slider h3{
+        font-size: 2.2rem;
+    }
+
+    .slider li:nth-of-type(1) h3{
+        position: relative;
+        right: 5rem;
+     }
+
+    .slider li:nth-of-type(2) h3{
+        position: relative;
+        left: 5rem;
+     }
+
+
+    .slider li:last-of-type h3{
+        position: relative;
+        left: 0;
+        top: 10rem;
+     }
+    
+
+    .test h3, h4{
+        margin-left: 9.2rem;
+    }
+
+    .test h4{
+        margin-bottom: 3rem;
+        min-height: 4rem;
+    }
+
+    .test figure{
+        width: 465px;
+    }
+
+    .datosNoticia{
+        margin-top: 2rem;
+    }
+
+    .datosNoticia p{
+        width: 70%;
+        margin-left: 7.7rem;
+        text-align: left;
+    }
+
+    .datosNoticia span{
+        margin-left: 9.2rem;
+    }
+
+    .datosNoticia a{
+        margin-right: 8.8rem;
+    }
+
+    .datosNoticia{
+        margin-top: 3rem;
+    }
+
+    .test figure img{
+        width: 460px;
+        height: 300px;
+        object-fit: cover;
+    }
+
+    #agendaDatos span{
+        padding: 0;
+        margin-left: 2.5rem;
+        color: #757577;
+        flex-basis: 100%;
+    }
+
+    #agendaDatos a:first-of-type{
+        margin-top: 1rem;
+        color: #F27274;
+        border-left: 3px solid #F27274;
+        padding: 0 0 0 0.5rem;
+        flex-basis: 49%;
+    }
+
+    #agendaDatos a:last-of-type{
+        color: #fff;
+        background-color: #6F7073;
+        width: 7.5rem;
+        margin-top: 1rem;
+    }
+
+    .links{
+        margin-right: 19rem;
+    }
+}

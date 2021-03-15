@@ -1,0 +1,88 @@
+@import '../footer/global.css';
+@import '../components/btns.css';
+@import '../components/bg.css';
+
+/* .icono-calendario::before {
+    padding-right: .5rem;
+    position: relative;
+    top: 2px;
+}
+
+img.responsive-img.w-full.imagen {
+    object-fit: cover;
+    object-position: top;
+    width: 100%;
+    height: 20rem;
+}
+
+.lupa-div {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: 500ms;
+    background-color: rgba(0, 0, 0, .25);
+}
+
+.lupa {
+    font-size: 3rem;
+    color: var(--color-dos);
+}
+
+.image-link:hover .lupa-div {
+    opacity: 1;
+} */
+
+
+/* .noticia p {
+    padding: 0 4rem;
+    text-align: left;
+} */
+
+.noticia p {
+    text-align: left;
+    padding: 0 1.5rem;
+}
+
+
+/* .parallax {
+    background-image: url("");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+
+/* MD */
+@media(min-width: 768px){
+    /**/
+}
+
+/* LG */
+@media(min-width: 1024px){
+    .noticia-subtitulo,
+    .fuente {
+        padding-left: 6rem;
+    }
+    .noticia p {
+        text-align: left;
+        padding: 0 6rem;
+        font-size: 1.2rem;
+    }
+    figure{
+        background-size: cover;
+        background-attachment: fixed;
+        height: 20rem;
+    }
+    .noticia-imagen{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+/* XL */
+@media(min-width: 1200px){
+    /**/
+}

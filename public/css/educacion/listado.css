@@ -1,0 +1,57 @@
+@import '../components/nav.css';
+.container {
+    margin-top: 3rem;
+}
+
+.contenido {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.accesos-directos {
+    background-color: #fff;
+}
+
+.container h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.container h3 {
+    font-weight: bold;
+}
+
+.container a {
+    margin: 0 0 0 1.5rem;
+    margin-top: 2rem;
+}
+
+.previous {
+    position: relative;
+}
+
+.previous::before {
+    content: '';
+    position: absolute;
+    bottom: -2rem;
+    left: calc(-100% - 1rem);
+    width: 200%;
+    height: 2px;
+    background: var(--color-tres);
+}
+
+@media screen and (min-width: 600px) {
+    .sidenav {
+        width: 12rem;
+    }
+    .contenido {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .educacionLis {
+        margin: 2rem 0;
+    }
+}

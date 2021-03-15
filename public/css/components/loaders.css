@@ -1,0 +1,89 @@
+.loader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: var(--color-cuatro);
+    z-index: 20;
+}
+
+.loader.opened{
+    display: block;
+}
+
+.loader.closed{
+    display: none;
+}
+
+.loader > section{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.loader > section > header{
+    color: var(--color-uno);
+    font-size: 1rem;
+    text-align: center;
+}
+
+.loader .bar{
+    width: 100%;
+    height: 2rem;
+    border: 2px solid var(--color-uno);
+    border-radius: .25rem;
+    overflow: hidden;
+}
+
+.loader .progress{
+    width: 0%;
+    height: 100%;
+    background-color: var(--color-tres);
+    transition: 500ms;
+}
+
+.loading-dots{
+    height: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.loading-dots::after{
+    --color-one: var(--color-cuatro);
+    background-color: var(--color-cuatro);
+    transform: translateX(-1rem);
+    content: '';
+    animation: dots 1s steps(5, end) infinite;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+}
+
+/* .loading-dots::before{
+    background-color: var(--color-cuatro);
+    content: '';
+    transform: translateX(-1rem);
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+} */
+
+/* * MD */
+@media(min-width: 768px){
+    .loader > section > header{
+        font-size: 2rem;
+    }
+}
+
+/* LG */
+@media(min-width: 1024px){
+    /**/
+}
+
+/* XL */
+@media(min-width: 1200px){
+    /**/
+}

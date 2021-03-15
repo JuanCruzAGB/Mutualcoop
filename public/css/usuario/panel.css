@@ -1,0 +1,24 @@
+@import '../components/nav.css';
+
+/* * MD */
+@media(min-width: 768px){
+    /**/
+}
+
+/* LG */
+@media(min-width: 1024px){
+    /**/
+}
+
+/* GONZALO */
+@media(min-width: 1200px){
+    /**/
+   .fa-trash, .fa-pen, .fa-eye{
+       font-size: 1.2rem !important;
+   }
+}
+
+/* XL */
+@media(min-width: 1400px){
+    /**/
+}

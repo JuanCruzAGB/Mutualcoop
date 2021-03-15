@@ -1,0 +1,182 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-size: 16px;
+}
+
+body {
+    position: relative;
+    min-height: 100vh;
+    border-bottom: 1px solid #ee6e73;
+}
+
+.nav-extended {
+    padding: 1rem;
+}
+
+.btn-small {
+    color: #ee6e73;
+}
+
+.btn-small i {
+    position: relative;
+    bottom: 11px;
+}
+
+.sidenav {
+    width: 65%;
+}
+
+.sidenav li a {
+    color: #fff;
+}
+
+.input-field label {
+    color: #fff;
+}
+
+.input-field input[type=email]:focus+label {
+    color: #fff !important;
+}
+
+.autofillLogin input:-webkit-autofill {
+    box-shadow: 0 0 0px 1000px #ee6e73 inset !important;
+    -webkit-text-fill-color: #fff;
+}
+
+.contacto input:-webkit-autofill {
+    box-shadow: 0 0 0px 1000px #fff inset !important;
+    color: #fff
+}
+
+.contacto input:focus {
+    background-color: #fff;
+}
+
+
+/* autofill amarillo rompe pelotas */
+
+.contacto input:-webkit-autofill,
+.contacto input:-webkit-autofill:hover,
+.contacto input:-webkit-autofill:focus,
+.contacto input:-webkit-autofill {
+    border: none !important;
+    -webkit-text-fill-color: inherit !important;
+    -webkit-box-shadow: 0 0 0px 1000px #FFFFFF inset !important;
+    transition: background-color 5000s ease-in-out 0s !important;
+}
+
+
+/* 
+h1{
+    font-size: 2em;
+    text-align: center;
+}
+
+h2{
+    color: #ee6e73;
+    font-size: 1.5em;
+    margin: 0;
+}
+
+h3{
+    font-size: 1.2rem;
+    margin-top: .5rem;
+    padding-left: 1.5rem;
+}
+
+hr{
+    margin: 3rem 0;
+}
+
+p, span{
+    margin: 0;
+    padding: 0 1.5rem;
+}
+
+p{
+    margin-top: 1.5rem;
+    font-size: 1.1rem;
+}
+
+span{
+    font-size: .9rem;
+}
+
+figure{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    margin-bottom: 25vh;
+} */
+
+
+/* Footer */
+
+.footer {
+    background-color: #ee6e73;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    /* position: absolute; */
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.footer span {
+    display: block;
+    padding: 0;
+}
+
+.slider {
+    display: none;
+}
+
+#notificacion {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    bottom: -5rem;
+    left: 5rem;
+    right: 5rem;
+    border-radius: .2rem;
+    color: white;
+    background: #3b3b3b93;
+    padding: .5rem 1.5rem;
+    font-size: 1.1rem;
+    z-index: 99;
+    transition: all 1.5s cubic-bezier(0.01, 0.49, 0.44, 1);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+#notificacion p {
+    margin: 0;
+    padding: 0;
+}
+
+#notificacion i {
+    cursor: pointer;
+}
+
+@media screen and (min-width: 600px) {
+    .divSubmit {
+        margin-bottom: 0;
+        margin-top: 1rem;
+    }
+    .slider {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .slider {
+        display: block;
+    }
+}

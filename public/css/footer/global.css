@@ -1,0 +1,45 @@
+@import 'logo.css';
+@import '../components/text.css';
+@import 'redes_sociales.css';
+@import 'menu.css';
+
+body > footer{
+    background-color: #ebf4ff;
+    color: var(--color-cuatro);
+    text-align: center;
+}
+
+body > footer .footer-widgets{
+    min-height: 5rem;
+    padding: 1rem;
+    background-color: var(--color-dos);
+}
+
+body > footer .footer-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 5rem;
+    padding: 1rem;
+    background-color: var(--color-dos);
+}
+
+body > footer span{
+    padding: 0;
+    display: block;
+}
+
+/* MD */
+@media(min-width: 768px){
+    /**/
+}
+
+/* LG */
+@media(min-width: 1024px){
+    /**/
+}
+
+/* XL */
+@media(min-width: 1200px){
+    /**/
+}

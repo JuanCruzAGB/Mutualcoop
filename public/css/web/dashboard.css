@@ -1,0 +1,70 @@
+@import '../components/nav.css';
+@import '../components/btns.css';
+@import '../components/banner.css';
+@import '../components/separator.css';
+@import '../components/empty.css';
+@import '../components/evento/eventos.css';
+
+.card{
+    min-width: 47%;
+}
+
+.slick-slide > div {
+    margin: .5rem 1rem;
+}
+.slick-prev:before, .slick-next:before{
+    color: var(--color-uno);
+}
+
+.faq .closed .pregunta-respuesta{
+    height: 0;
+}
+
+
+.faq .opened .pregunta-respuesta{
+    height: auto;
+    padding: 0 4rem 0 2rem;
+}
+
+.pregunta-icono{
+    position: relative;
+    bottom: 3.1rem;
+    right: 2rem;
+}
+
+.separador-preguntas{
+    width: 85%;
+    margin: 1rem auto;
+}
+
+.notification{
+    height: 4.6rem;
+}
+
+/* MD */
+@media(min-width: 768px){
+    /**/
+}
+
+/* LG */
+@media(min-width: 1024px){
+    .right-arrow, .left-arrow{
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 5rem;
+        z-index: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .slick-prev:before, .slick-next:before{
+        color: var(--color-uno);
+    }
+}
+
+/* XL */
+@media(min-width: 1200px){
+    /**/
+}

@@ -1,0 +1,87 @@
+.tab-section{
+    --color-one: #fff; /* * Buttons */
+    --color-two: #222; /* * Buttons background color */
+    --color-three: #fff; /* * Sidebar background color */
+}
+
+.tab-sidebar.fixed{
+    min-height: calc((100vh - 4.6rem) - 10rem);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    transform: translateX(0);
+    background-color: var(--color-three);
+}
+
+.tab-sidebar.fixed.closed{
+    transform: translateX(-100%);
+}
+
+.tab-sidebar .tab-sidebar-header{
+    position: relative;
+    width: 100%;
+    height: 0;
+}
+
+.tab-sidebar .tab-sidebar-header .tab-sidebar-button{
+    position: absolute;
+    top: 2.3rem;
+    left: 100%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 40%;
+    height: 2rem;
+    color: var(--color-one);
+    background-color: var(--color-two);
+    border-top-right-radius: .25rem;
+    border-bottom-right-radius: .25rem;
+}
+
+.tab-sidebar.opened .tab-sidebar-header .tab-sidebar-button:hover,
+.tab-sidebar.closed .tab-sidebar-header .tab-sidebar-button{
+    padding-right: .5rem;
+}
+
+.tab-sidebar.opened .tab-sidebar-header .tab-sidebar-button,
+.tab-sidebar.closed .tab-sidebar-header .tab-sidebar-button:hover,
+.tab-sidebar .tab-sidebar-header .tab-sidebar-button:hover{
+    padding-right: 0;
+}
+
+.tab-menu .tabs .tab .tab-link{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-height: 4.6rem;
+    /* line-height: 4.6rem; */
+}
+
+.tab-menu .tabs .tab .tab-link .tab-icon{
+    display: inline-flex;
+    flex-basis: 2rem;
+}
+
+.tab-menu .tabs .tab .tab-link .tab-text{
+    flex-basis: calc(100% - 2rem);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* * MD */
+@media(min-width: 768px){
+    /**/
+}
+
+/* LG */
+@media(min-width: 1024px){
+    /**/
+}
+
+/* XL */
+@media(min-width: 1200px){
+    /**/
+}

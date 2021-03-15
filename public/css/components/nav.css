@@ -1,0 +1,135 @@
+ .nav-menu {
+    --navmenu-title-color: var(--color-tres);
+    --navmenu-button-color: var(--color-cinco);
+    --navmenu-background-color: var(--color-cuatro);
+    --navmenu-background-color-alternative: var(--color-cuatro);
+    --navmenu-icon-color: var(--color-tres);
+    --navmenu-icon-color-alternative: var(--color-tres);
+
+    /* --color-one: var(--color-tres); */
+    /* * Titles */
+    /* --color-two: var(--color-uno); */
+    /* * Buttons */
+    /* --color-two-alternative: var(--color-dos); */
+    /* * Buttons efects */
+    /* --color-three: var(--color-cuatro); */
+    /* * Background */
+    /* --color-three-alternative: var(--color-cuatro); */
+    /* * Background efects */
+    /* --color-four: var(--color-dos); */
+    /* * Borders efects */
+    /* --color-four-alternative: var(--color-dos); */
+    /* * Borders efects */
+    /* --color-five: var(--color-tres); */
+    /* * Icons */
+    /* --color-five-alternative: var(--color-tres); */
+    /* * Icons efects */
+}
+
+.sidebar {
+    --color-five: var(--color-tres);
+}
+
+.dropdown {
+    --color-three: var(--color-cuatro);
+    --color-five: var(--color-tres);
+}
+
+.floating-menu {
+    --color-one: var(--color-tres);
+    --color-two: var(--color-cuatro);
+}
+
+.tab-menu .tabs .tab>.tab-link:hover,
+.tab-menu .tabs .tab.active>.tab-link,
+.tab-menu .tabs .tab .tab-link:hover .link-icon,
+.tab-menu .tabs .tab.active .tab-link .link-icon {
+    color: var(--color-tres);
+    background-color:#f5f5f5;
+}
+
+.sidebar .sidebar-header {
+    background-color: var(--color-cuatro);
+    border: none;
+}
+
+#tab .dropdown .dropdown .dropdown-header {
+    padding: 0 .75rem;
+}
+
+#tab .dropdown .dropdown .dropdown-header {
+    padding: 0 .75rem;
+}
+
+#tab .dropdown .dropdown .dropdown-link {
+    padding: 0 2.25rem;
+}
+
+/* #tab .dropdown .dropdown-menu-list {
+    background-color: #e2e2e2
+}
+
+#tab .dropdown .dropdown-menu-list .dropdown-menu-list {
+    background-color: #e2e2e2;
+} */
+
+.sidebar .sidebar-content .sidebar-menu-list li.opened,
+.sidebar .sidebar-content .sidebar-menu-list li li.opened {
+    padding-bottom: 0;
+}
+
+#tab.sidebar .sidebar-content .sidebar-menu-list li, #filters.sidebar .sidebar-content .sidebar-menu-list li {
+    padding: 0;
+    background-color: white;
+}
+
+.sidebar.opened .sidebar-header .sidebar-button::before {
+    background-color: rgba(0, 0, 0, .4);
+}
+
+.sidebar .sidebar-content .sidebar-menu-list li::before {
+    background-color: #eeeeee;
+}
+
+.tab-menu .tabs .tab .tab-link .link-icon {
+    margin-right: .8rem;
+}
+
+.dropdown:not(.dropdown-click) .dropdown-header .dropdown-button:hover, .dropdown .dropdown-header .dropdown-button:focus{
+    color: var(--color-tres);
+}
+
+.dropdown .dropdown-menu-list{
+    margin-top: 0;
+}
+
+
+/* * MD */
+
+@media(min-width: 768px) {
+    /**/
+}
+
+
+/* LG */
+
+@media(min-width: 1024px) {
+    .nav-menu {
+        padding: 0 4rem;
+    }
+
+    .nav-menu .nav-row.big {
+        height: fit-content;
+    }
+    
+    .nav-menu .nav-row.big .nav-title.logo img {
+        height: 4rem;
+    }
+}
+
+
+/* XL */
+
+@media(min-width: 1200px) {
+    /**/
+}

@@ -1,0 +1,136 @@
+h1{
+    font-size: 2rem;
+    text-align: center;
+}
+
+.iniciarIndex{
+    display: none;
+}
+
+/* label color */
+
+.input-field.col .prefix ~ label, .input-field.col .prefix ~ .validate ~ label {
+    color: #000;
+}
+
+.input-field input[type=text]:focus+label{
+        color: #000 !important;
+}
+
+.input-field input[type=text]:focus{
+    border-bottom: 1px solid #000 !important;
+    box-shadow: 0 0 0 0 #000 !important;
+}
+
+.input-field input:focus {
+    border-bottom: 1px solid #000 !important;
+    box-shadow: 0 1px 0 0 #000 !important;
+}
+
+/* textarea underline */
+
+.input-field .materialize-textarea:focus{
+    border-bottom: 1px solid #000 !important;
+    box-shadow: 0 0 0 0 #000 !important;
+}
+
+.input-field .materialize-textarea:focus+label{
+    color: #000 !important;
+}
+
+.input-field .prefix.active{
+    color: #039be5;
+}
+
+.btn-small{
+    margin-top: 20px;
+}
+
+.btn-small i{
+    position: relative;
+    top: 1px;
+}
+
+.divSubmit{
+    margin-bottom: 10rem;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* btn file */
+
+#file{
+    visibility: hidden;
+    width: 0;
+}
+
+#btnFile{
+    display: inline-block;
+    margin: 0;
+    background-color: #039be5;
+    outline: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    padding: .5rem;
+    box-shadow: 3px 3px 8px #888888;
+    font-family: roboto 2.0;
+    text-transform: uppercase;
+}
+
+#texto{
+    margin-left: 1rem;
+}
+
+.detallesObras h2{
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.detallesObras h3{
+    font-size: 1.8rem;
+    margin: 2.5rem 0;    
+}
+
+.imgObra{
+    width: 250px;
+    margin-top: 2rem;
+}
+
+.divBtnSuscribite{
+    text-align: center;
+}
+
+
+
+
+@media screen and (min-width: 600px){
+    .divSubmit{
+      margin-bottom: 0;
+      margin-top: 1rem;
+    }
+
+    .divBtnSuscribite{
+        text-align: left;
+        margin-left: 8rem;
+    }
+  }
+
+@media screen and (min-width: 992px){
+    
+    .divBtnSuscribite{
+        text-align: left;
+        margin-left: 18rem;
+    }
+  }
+
+@media screen and (min-width: 1700px){
+    
+    .divBtnSuscribite{
+        text-align: left;
+        margin-left: 25rem;
+    }
+  }
+

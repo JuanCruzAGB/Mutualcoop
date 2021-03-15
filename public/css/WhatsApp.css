@@ -1,0 +1,62 @@
+/* WhatsApp */
+.whatsapp{
+    --primary-color: #222;
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    height: 65px;
+    width: 65px;
+    background: var(--primary-color);
+    border-radius: 50%;
+    transition: 500ms;
+    animation: pulse 2s infinite;
+}
+
+.whatsapp:hover{
+  animation: none;
+}
+
+.whatsapp:focus,
+.whatsapp:hover{
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.whatsapp a{
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.whatsapp a i{
+    position: relative;
+}
+
+.whatsapp a .fa-whatsapp:before{
+    content: "\f232";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    font-size: 2rem;
+    color: white;
+    animation: maximize 4s infinite;
+}
+
+.whatsapp:hover a .fa-whatsapp:before{
+    animation: none;
+}
+
+/* LG */
+@media(min-width: 1024px){
+    .whatsapp a i{
+        height: 75px;
+        width: 75px;
+    }
+}

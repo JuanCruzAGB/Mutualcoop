@@ -1,0 +1,370 @@
+@import '../../components/animations.css';
+@import '../../components/sidebar.css';
+@import '../../components/btns.css';
+@import '../../components/bg.css';
+@import '../../components/empty.css';
+@import '../../components/Filter/styles.css';
+@import 'components/tabla.css';
+@import 'components/detalles.css';
+@import '../../components/text.css';
+@import '../../components/loaders.css';
+@import '../../modal/modal.css';
+.empty-header {
+    min-width: 10rem;
+}
+
+.tabla {
+    padding: 2rem 0;
+    padding-left: 2rem;
+    width: fit-content;
+    max-width: 100%;
+}
+
+.tabla>div {
+    width: fit-content;
+}
+
+tr td:last-of-type .empty-icon {
+    background-color: var(--color-tres);
+}
+
+.empty-header {
+    background-color: var(--color-uno);
+}
+
+.tab-menu h2 {
+    height: 4.6rem;
+    line-height: 4.6rem;
+}
+
+.input-field input[type=text]+label {
+    color: #000;
+}
+
+.iniciarIndex {
+    display: none;
+}
+
+.input-field input[type=text]:focus+label {
+    color: #000 !important;
+}
+
+.input-field input[type=text]:focus {
+    border-bottom: 1px solid #000 !important;
+    box-shadow: 0 0 0 0 #000 !important;
+}
+
+.input-field .prefix.active {
+    color: #000;
+}
+
+.btn-small {
+    margin-top: 20px;
+}
+
+.btn-small i {
+    position: relative;
+    top: 0;
+}
+
+
+/* #menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#menu li{
+    max-width: 22rem;
+    list-style: none;
+    padding: 1rem;
+} */
+
+.tab-menu {
+    min-height: 4.6rem;
+}
+
+.tab-menu .tabs .tab.selected>.tab-link {
+    background-color: #a3bffa;
+}
+
+.tab-content .container {
+    display: none;
+}
+
+.tab-content .container.opened {
+    display: block;
+}
+
+.tab-menu .tabs .tab.dropdown.closed>.tab-link {
+    border-color: transparent;
+}
+
+.tab-menu .tabs .tab .dropdown-menu .tab-link .text {
+    font-size: .8rem;
+}
+
+table .fas.fa-check,
+table .fas.fa-ban,
+table .fas.fa-times {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-dos);
+}
+
+.sub-seccion-button {
+    display: flex;
+    justify-content: center;
+}
+
+table tbody tr:nth-child(odd) {
+    background-color: var(--color-uno-alternativo);
+}
+
+table tbody tr:hover {
+    background-color: var(--color-uno-alternativo);
+}
+
+table tbody tr .total span {
+    background-color: var(--color-uno);
+    color: var(--color-cuatro);
+    padding: .25rem .5rem;
+    border-radius: .25rem;
+}
+
+
+/* Switch */
+
+.switch {
+    position: relative;
+    display: flex;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: var(--color-uno);
+}
+
+
+/* input:focus+.slider {
+    background-color: var(--color-uno);
+} */
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+
+/* Rounded sliders */
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+
+/* buscador */
+
+.buscador-box {
+    position: relative;
+    height: 4rem;
+}
+
+.buscador-box .search {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    padding: 1.8rem;
+    background: var(--color-uno);
+    border-radius: 50%;
+    transition: all 1s;
+    z-index: 4;
+    box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.4);
+}
+
+.buscador-box .search:hover {
+    cursor: pointer;
+}
+
+.buscador-box .search::before {
+    content: "";
+    position: absolute;
+    margin: auto;
+    top: 22px;
+    right: 0;
+    bottom: 0;
+    left: 22px;
+    width: 12px;
+    height: 2px;
+    background: white;
+    transform: rotate(45deg);
+    transition: all 0.5s;
+}
+
+.buscador-box .search::after {
+    content: "";
+    position: absolute;
+    margin: auto;
+    top: -5px;
+    right: 0;
+    bottom: 0;
+    left: -5px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 2px solid white;
+    transition: all 0.5s;
+}
+
+.buscador-box input {
+    position: absolute;
+    margin: auto;
+    font-weight: 100;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    outline: none;
+    border: none;
+    background: var(--color-uno);
+    color: white;
+    text-shadow: 0 0 10px var(--color-uno);
+    padding: 0 80px 0 20px;
+    border-radius: 30px;
+    box-shadow: 0 0 25px 0 var(--color-uno), 0 20px 25px 0 rgba(0, 0, 0, 0.2);
+    transition: all 1s;
+    opacity: 0;
+    z-index: 5;
+    font-weight: bolder;
+    letter-spacing: 0.1em;
+}
+
+.buscador-box input:hover {
+    cursor: pointer;
+}
+
+.buscador-box input:focus {
+    width: 300px;
+    opacity: 1;
+    cursor: text;
+}
+
+.buscador-box input:focus~.search {
+    right: -250px;
+    background: #151515;
+    z-index: 6;
+}
+
+.buscador-box input:focus~.search::before {
+    top: 0;
+    left: 0;
+    width: 25px;
+}
+
+.buscador-box input:focus~.search::after {
+    top: 0;
+    left: 0;
+    width: 25px;
+    height: 2px;
+    border: none;
+    background: white;
+    border-radius: 0%;
+    transform: rotate(-45deg);
+}
+
+.buscador-box input::placeholder {
+    color: white;
+    opacity: 0.5;
+    font-weight: bolder;
+}
+
+.obras-suscriptas {
+    font-size: 0.85rem;
+}
+
+
+/* * MD */
+
+@media(min-width: 768px) {
+    .sidenav {
+        width: 40%;
+    }
+    .empty-header {
+        min-width: 10rem;
+    }
+}
+
+
+/* LG */
+
+@media(min-width: 1024px) {
+    .dropdown:hover .dropdown-menu {
+        display: block;
+    }
+    .tabla {
+        padding: 2rem;
+        width: 100%;
+    }
+    .tabla>div {
+        width: 100%;
+    }
+    .tabla .table-auto {
+        margin: auto;
+    }
+    .empty-header {
+        min-width: 8rem;
+    }
+}
+
+
+/* XL */
+
+@media(min-width: 1200px) {
+    /**/
+}

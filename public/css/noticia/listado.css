@@ -1,0 +1,40 @@
+@import '../footer/global.css';
+@import '../components/btns.css';
+@import '../components/loaders.css';
+@import '../components/bg.css';
+.noticia-img {
+    overflow: hidden;
+    height: 20rem;
+}
+
+.noticia-img img {
+    transition: 500ms;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.noticia-img img:hover {
+    transform: scale(1.03);
+}
+
+
+/* MD */
+
+@media(min-width: 768px) {
+    /**/
+}
+
+
+/* LG */
+
+@media(min-width: 1024px) {
+    /**/
+}
+
+
+/* XL */
+
+@media(min-width: 1200px) {
+    /**/
+}

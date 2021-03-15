@@ -1,0 +1,159 @@
+@import '../components/nav.css';
+@import '../components/bg.css';
+@import '../components/btns.css';
+
+.input-file,
+.file-img.generated-image{
+    width: 100%;
+}
+
+.input-group{
+    position: relative;
+}
+
+form input[type=text],
+input[type=number],
+input[type=password],
+input[type=email],
+input[type=url]{
+    border-bottom: 1px solid #ccc;
+    outline: none;
+}
+
+form input[type=text]:focus,
+input[type=password]:focus,
+input[type=number]:focus,
+input[type=email]:focus,
+input[type=url]:focus {
+    border-bottom: 1px solid var(--color-dos);
+    transition: 600ms;
+}
+
+.focus\:shadow-outline:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.calendario{
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: calc(100% - 1px);
+    color: var(--color-dos);
+    transition: 500ms;
+}
+
+.calendario:hover{
+    color: var(--color-dos);
+}
+
+.fecha{
+    border-bottom: 1px solid #ccc;
+    background-color: #fff;
+    padding: 3px 5px;
+    width: 17rem;
+}
+
+.fecha:hover{
+    border-bottom: 1px solid var(--color-dos);
+}
+
+/* Chrome, Safari, Edge, Opera */
+form input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.checkbox input[type="checkbox"] {
+    width: auto;
+    left: 0;
+    margin-left: -30px;
+}
+
+.datepicker--day-name{
+    color: var(--color-uno);
+}
+
+.abrirAvanzado:focus{
+    outline: none;
+}
+
+.crear-avanzado{
+    transition: 500ms;
+    padding: 0;
+}
+
+.crear-avanzado.hidden{
+    padding: 0;
+}
+
+.crear-avanzado.visible{
+    padding: 1rem;
+}
+
+/* Reset de contraseña */
+
+input[name=cambiarClave_dato]::placeholder {
+    font-size: .98rem;
+}
+
+.alta, .baja{
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: calc(100% - 1px);
+    color: var(--color-dos);
+    transition: 500ms;
+}
+
+/* * MD */
+@media(min-width: 768px) {
+    /**/
+}
+
+/* LG */
+@media(min-width: 1024px) {
+
+    .checkbox input[type="checkbox"] {
+        width: auto;
+        left: 0;
+        margin-left: -15px;
+    }
+
+
+}
+
+/* XL */
+@media(min-width: 1200px) {
+
+    .checkbox input[type="checkbox"] {
+        width: auto;
+        left: 0;
+        margin-left: 10px;
+    }
+}
+
+@media(min-width: 1500px) {
+
+    .checkbox input[type="checkbox"] {
+        width: auto;
+        left: 0;
+        margin-left: 20px;
+    }
+}

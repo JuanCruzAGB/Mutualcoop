@@ -1,0 +1,44 @@
+.background.background-uno {
+    background-color: var(--color-uno);
+}
+
+.background.background-dos {
+    background-color: var(--color-dos);
+}
+
+.background.background-tres {
+    background-color: var(--color-tres);
+}
+
+.background.background-cuatro {
+    background-color: var(--color-cuatro);
+}
+
+.background.background-siete {
+    background-color: var(--color-siete);
+}
+
+.background.background-ocho {
+    background-color: var(--color-ocho);
+}
+
+
+/* * MD */
+
+@media(min-width: 768px) {
+    /**/
+}
+
+
+/* LG */
+
+@media(min-width: 1024px) {
+    /**/
+}
+
+
+/* XL */
+
+@media(min-width: 1200px) {
+    /**/
+}

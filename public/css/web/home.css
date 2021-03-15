@@ -1,0 +1,296 @@
+@import '../components/banner.css';
+@import '../components/text.css';
+@import '../components/btns.css';
+@import '../components/bg.css';
+@import '../components/animations.css';
+@import '../components/empty.css';
+@import '../components/evento/eventos.css';
+
+
+h1,
+h2,
+h3 {
+    font-family: var(--font-uno) !important;
+}
+
+p,
+span,
+button,
+a,
+li {
+    font-family: var(--font-dos);
+}
+
+.eventos-slider{
+    background: var(--color-cuatro);
+}
+
+
+/* test slider services */
+
+.slick-slider div {
+    transition: none;
+}
+
+
+/* .slick-slide{
+width: calc(100vw - 4rem);
+} */
+
+.nosotros-image-div {
+    overflow: hidden;
+}
+
+.nosotros-image-div img {
+    transition: 500ms;
+}
+
+.nosotros-image-div img:hover {
+    transform: scale(1.03);
+}
+
+.servicios {
+    font-family: Arial;
+    display: block;
+    margin: 0 auto;
+}
+
+.servicios .servicio-icono {
+    color: #3498db;
+    font-size: 36px;
+    position: relative;
+    text-align: center;
+}
+
+.info-evento h3 {
+    font-size: 1.2rem;
+}
+
+.faq .closed .pregunta-respuesta {
+    height: 0;
+}
+
+.faq .opened .pregunta-respuesta {
+    height: auto;
+    padding: 0 4rem 0 2rem;
+}
+
+.pregunta-icono {
+    position: relative;
+    bottom: 3.1rem;
+    right: 2rem;
+}
+
+.separador-preguntas {
+    width: 85%;
+    margin: 1rem auto;
+}
+
+.slick-slide>div {
+    margin: .5rem 1rem;
+}
+
+/* suscriptores */
+
+
+.padre-suscriptores{
+    margin-bottom: 5rem;
+}
+
+.padre-suscriptores div{
+    height: 10rem;
+}
+
+.padre-suscriptores img{
+    height: 12rem;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+.slick-dotted.slick-slider{
+    margin: 2rem 0 4rem 0;
+}
+
+.contacto h2 {
+    color: var(--color-uno);
+}
+
+input,
+textarea {
+    border-color: #c6c6c6;
+}
+
+
+/* Chrome, Safari, Edge, Opera */
+
+form input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+/* Firefox */
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+form .focus\:shadow-outline:focus {
+    -webkit-box-shadow: 0 0 0 1px #283f5f;
+    box-shadow: 0 0 0 1px #283f5f;
+}
+
+.pregunta-notificacion-ok {
+    top: 1.8rem;
+    right: .8rem;
+}
+
+
+/* sponsors */
+
+.gallery {
+    background: #EEE;
+}
+
+.gallery-cell {
+    width: 100%;
+    height: 200px;
+    margin-right: 10px;
+    counter-increment: gallery-cell;
+}
+
+.gallery-cell img {
+    height: 100% !important;
+    width: 100%;
+    object-fit: contain;
+}
+
+
+/* cell number */
+
+.gallery-cell:before {
+    display: block;
+    text-align: center;
+    line-height: 200px;
+    font-size: 80px;
+    color: white;
+}
+
+
+/* big buttons, no circle */
+
+.flickity-prev-next-button {
+    width: 100px;
+    height: 100px;
+    background: transparent;
+    display: none;
+}
+
+
+/* arrow color */
+
+.flickity-prev-next-button .arrow {
+    fill: var(--color-uno);
+}
+
+.flickity-prev-next-button.no-svg {
+    color: var(--color-uno);
+}
+
+.flickity-prev-next-button:hover {
+    background: transparent;
+}
+
+
+/* hide disabled button */
+
+.flickity-prev-next-button:disabled {
+    display: none;
+}
+
+
+/* position dots in gallery */
+
+.flickity-page-dots {
+    bottom: 0px;
+}
+
+
+/* white circles */
+
+.flickity-page-dots .dot {
+    width: 12px;
+    height: 12px;
+    opacity: 1;
+    background: transparent;
+    border: 2px solid white;
+}
+
+
+/* fill-in selected dot */
+
+.flickity-page-dots .dot.is-selected {
+    background: white;
+}
+
+
+/* MD */
+
+@media(min-width: 768px) {
+    .slick-slide {
+        width: 50vw;
+    }
+    .flickity-prev-next-button {
+        display: block;
+    }
+}
+
+
+/* LG */
+
+@media(min-width: 1024px) {
+    .nav-menu:not(.fixed) .nav-row{
+        margin-top: .8rem;
+    } 
+    .bannerText {
+        padding: 0 21rem;
+    }
+    .bannerBtn {
+        width: 10rem;
+        height: 2.8rem;
+        margin-top: 2rem;
+    }
+    .nosotrosBtn {
+        width: 10rem;
+        height: 2.8rem;
+        margin-top: 2rem;
+    }
+    .eventosBtn {
+        width: 10rem;
+        height: 2.8rem;
+        margin-top: 2rem;
+    }
+
+    #faq{
+        width: 80%;
+        margin-bottom: 10rem;
+    }
+
+    #faq hr{
+        width: 97%;
+    }
+
+    #faq .pregunta{
+        padding: .5rem 0;
+    }
+}
+
+
+/* XL */
+
+@media(min-width: 1200px) {
+    /**/
+}

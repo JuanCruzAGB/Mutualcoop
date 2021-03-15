@@ -1,0 +1,52 @@
+@keyframes pulse{
+    0%{
+        box-shadow: 0 0 0 0 var(--color-one);
+	}50%{
+        box-shadow: 0 0 0 2px var(--color-one);
+	}100%{
+        box-shadow: 0 0 0 0 var(--color-one);
+	}
+}
+
+@keyframes lock{
+    0%{
+        transform: rotateZ(-15deg);
+	}50%{
+        transform: rotateZ(15deg);
+	}100%{
+        transform: rotateZ(-15deg);
+	}
+}
+
+@keyframes dots{
+    0%, 20% {
+        background-color: rgba(0,0,0,0);
+        box-shadow: 1rem 0 0 rgba(0,0,0,0),
+                    2rem 0 0 rgba(0,0,0,0);
+    } 40% {
+        background-color: var(--color-one);
+        box-shadow: 1rem 0 0 rgba(0,0,0,0),
+                    2rem 0 0 rgba(0,0,0,0);
+    } 60% {
+        box-shadow: 1rem 0 0 var(--color-one),
+                    2rem 0 0 rgba(0,0,0,0);
+    } 80%, 100% {
+        box-shadow: 1rem 0 0 var(--color-one),
+                    2rem 0 0 var(--color-one);
+    }
+}
+
+/* * MD */
+@media(min-width: 768px){
+    /**/
+}
+
+/* LG */
+@media(min-width: 1024px){
+    /**/
+}
+
+/* XL */
+@media(min-width: 1200px){
+    /**/
+}

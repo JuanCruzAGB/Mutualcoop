@@ -1,0 +1,162 @@
+.btn {
+    display: inline-flex;
+    border-radius: .25rem;
+    transition: 500ms;
+    font-size: .9rem;
+    min-width: 5rem;
+    min-height: fit-content;
+    cursor: pointer;
+}
+
+.btn:hover {
+    animation: pulse infinite 1500ms;
+}
+
+.btn.btn-uno {
+    --color-one: var(--color-uno);
+    color: var(--color-cuatro);
+    background-color: var(--color-uno);
+}
+
+.btn.btn-uno-transparent,
+.btn.btn-uno-transparent .icon {
+    --color-one: var(--color-cuatro);
+    color: var(--color-uno);
+    background-color: var(--color-cuatro);
+}
+
+.btn.btn-uno-transparent:hover,
+.btn.btn-uno-transparent:hover .icon {
+    --color-one: var(--color-cuatro);
+    color: var(--color-cuatro);
+    background-color: var(--color-uno);
+}
+
+.btn.btn-dos {
+    --color-one: var(--color-tres);
+    color: var(--color-cuatro);
+    background-color: var(--color-tres);
+}
+
+.btn.btn-dos:hover {
+    --color-one: var(--color-cuatro);
+    color: var(--color-tres);
+    background-color: var(--color-cuatro);
+}
+
+.btn.btn-dos:hover .link-text {
+    color: var(--color-tres);
+}
+
+.btn.btn-dos-transparent,
+.btn.btn-dos-transparent .icon {
+    --color-one: var(--color-tres);
+    color: var(--color-tres);
+}
+
+.btn.btn-dos-transparent.border {
+    border: 1px solid #bc3f3136;
+}
+
+.btn.btn-dos-transparent.shadow {
+    box-shadow: 0 4px 6px -1px var(--color-tres), 0 2px 4px -1px var(--color-tres);
+}
+
+.btn.btn-dos-transparent {
+    transition: 500ms;
+}
+
+.btn.btn-dos-transparent .text {
+    color: #222;
+}
+
+.btn.btn-dos-transparent:hover,
+.btn.btn-dos-transparent:hover .icon {
+    --color-one: var(--color-cuatro);
+    color: var(--color-cuatro);
+}
+
+.btn.btn-dos-transparent:hover {
+    --color-one: var(--color-tres);
+    color: var(--color-cuatro);
+    background-color: var(--color-tres);
+}
+
+.btn.btn-dos-transparent:hover .text {
+    color: var(--color-cuatro);
+}
+
+.btn.btn-tres-transparent {
+    --color-one: var(--color-dos);
+    color: var(--color-dos);
+}
+
+.btn.btn-tres-transparent:hover {
+    --color-one: var(--color-dos);
+    color: var(--color-cuatro);
+    background-color: var(--color-dos);
+}
+
+.btn.btn-tres {
+    --color-one: var(--color-tres);
+    color: var(--color-cuatro);
+    border: 1px solid var(--color-cuatro);
+}
+
+.btn.btn-cuatro-transparent {
+    --color-one: var(--color-cuatro);
+    color: var(--color-cuatro);
+}
+
+.btn.btn-cuatro-transparent:hover,
+.btn.btn-cuatro-transparent:hover .icon {
+    --color-one: var(--color-cuatro);
+    color: var(--color-cuatro);
+}
+
+.btn.btn-cinco-transparent:hover .text {
+    color: #fff;
+}
+
+.btn .icon {
+    display: inline-block;
+}
+
+.btn.no-text {
+    justify-content: center;
+    align-items: center;
+    min-width: fit-content;
+}
+
+.btn:not(.no-text) .icon {
+    margin-right: .25rem;
+}
+
+.btn.btn-rounded {
+    border-radius: 50%;
+    font-size: 4rem;
+    min-width: 50px;
+    width: 50px;
+    min-height: 50px;
+}
+
+
+/* * MD */
+
+@media(min-width: 768px) {
+    /**/
+}
+
+
+/* LG */
+
+@media(min-width: 1024px) {
+    /**/
+}
+
+
+/* XL */
+
+@media(min-width: 1200px) {
+    /**/
+}
