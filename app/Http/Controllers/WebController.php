@@ -24,6 +24,7 @@
     use Auth;
     use Illuminate\Http\Request;
     use Illuminate\Support\Facades\Mail;
+    use Arcanedev\NoCaptcha\Rules\CaptchaRule;
 
     class WebController extends Controller{
         /** @var string - Controller idiom. */
@@ -72,6 +73,9 @@
                 }
             }
 
+            $rules = Web::$validation['contactar']['rules'];
+            $rules['g-recaptcha-response'] = ['required', new CaptchaRule];
+
             return view('web.home', [
                 'noticias' => $noticias,
                 'eventos_pasados' => $eventos_pasados,
@@ -79,7 +83,7 @@
                 'obras' => $obras,
                 'preguntas' => $preguntas,
                 'validation' => (object)[
-                    'rules' => Web::$validation['contactar']['rules'],
+                    'rules' => $rules,
                     'messages' => Web::$validation['contactar']['messages']['es'],
                 ],
             ]);

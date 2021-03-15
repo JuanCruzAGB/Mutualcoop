@@ -17,6 +17,7 @@
     use Illuminate\Http\Request;
     use Illuminate\Support\Facades\Mail;
     use Illuminate\Support\Facades\Validator;
+    use Arcanedev\NoCaptcha\Rules\CaptchaRule;
 
     class CorreoController extends Controller{
         /**
@@ -26,10 +27,12 @@
          */
         public function contactar(Request $request){
             $input = $request->input();
+
+            $rules = Web::$validation['contactar']['rules'];
+            $rules['g-recaptcha-response'] = ['required', new CaptchaRule];
             
-            $validator = Validator::make($request->all(), Web::$validation['contactar']['rules'], Web::$validation['contactar']['messages']['es']);
+            $validator = Validator::make($request->all(), $rules, Web::$validation['contactar']['messages']['es']);
             if($validator->fails()){
-                dd($validator);
                 return redirect('/#contacto')->withErrors($validator)->withInput();
             }
 
