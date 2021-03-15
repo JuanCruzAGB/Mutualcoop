@@ -1,0 +1,36 @@
+[submodule ".\\public\\submodules\\NavMenuJS"]
+	path = public/submodules/NavMenuJS
+	url = https://github.com/JuanCruzAGB/NavMenuJS.git
+[submodule ".\\public\\submodules\\SidebarJS"]
+	path = public/submodules/SidebarJS
+	url = https://github.com/JuanCruzAGB/SidebarJS.git
+[submodule ".\\public\\submodules\\DropdownJS"]
+	path = public/submodules/DropdownJS
+	url = https://github.com/JuanCruzAGB/DropdownJS.git
+[submodule ".\\public\\submodules\\ValidationJS"]
+	path = public/submodules/ValidationJS
+	url = https://github.com/JuanCruzAGB/ValidationJS.git
+[submodule ".\\public\\submodules\\InputFileMakerJS"]
+	path = public/submodules/InputFileMakerJS
+	url = https://github.com/JuanCruzAGB/InputFileMakerJS.git
+[submodule ".\\public\\submodules\\NotificationJS"]
+	path = public/submodules/NotificationJS
+	url = https://github.com/JuanCruzAGB/NotificationJS.git
+[submodule ".\\public\\submodules\\FilterJS"]
+	path = public/submodules/FilterJS
+	url = https://github.com/JuanCruzAGB/FilterJS.git
+[submodule ".\\public\\submodules\\TabMenuJS"]
+	path = public/submodules/TabMenuJS
+	url = https://github.com/JuanCruzAGB/TabMenuJS.git
+[submodule ".\\public\\submodules\\FloatingMenuJS"]
+	path = public/submodules/FloatingMenuJS
+	url = https://github.com/JuanCruzAGB/FloatingMenuJS.git
+[submodule ".\\public\\submodules\\ScrollDetectionJS"]
+	path = public/submodules/ScrollDetectionJS
+	url = https://github.com/JuanCruzAGB/ScrollDetectionJS.git
+[submodule ".\\public\\submodules\\SmoothScrollJS"]
+	path = public/submodules/SmoothScrollJS
+	url = https://github.com/JuanCruzAGB/SmoothScrollJS.git
+[submodule ".\\public\\submodules\\ProvidersJS"]
+	path = public/submodules/ProvidersJS
+	url = https://github.com/JuanCruzAGB/ProvidersJS.git
