@@ -237,8 +237,7 @@ Mutualcoop
 @endsection
 
 @section('js')
-{{ no_captcha()->script() }}
-{{ no_captcha()->getApiScript() }}
+{!! no_captcha()->script() !!}
 <script>
     grecaptcha.ready(() => {
         window.noCaptcha.render('login', (token) => {
