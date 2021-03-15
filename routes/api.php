@@ -1,19 +1,45 @@
 <?php
+    use Illuminate\Http\Request;
 
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Route;
+    Route::middleware('api')->group(function(){
+/** AuthController */
+        Route::post('ingresar', 'API\AuthController@doIngresar');
 
-/*
-|--------------------------------------------------------------------------
-| API Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register API routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| is assigned the "api" middleware group. Enjoy building your API!
-|
-*/
+/** NoticiaController */
+        Route::get('noticias', 'API\NoticiaController@getAll');
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
-});
+        Route::middleware('auth:api')->group(function(){
+/** UsuarioController */
+            Route::get('usuarios', 'API\UsuarioController@getAll');
+
+/** CategoriaController */
+            Route::get('categorias', 'API\CategoriaController@getAll');
+
+/** TemaController */
+            Route::get('temas', 'API\TemaController@getAll');
+
+/** EventoController */
+            Route::get('eventos', 'API\EventoController@getAll');
+
+/** NormativaController */
+            Route::get('normativas', 'API\NormativaController@getAll');
+            Route::get('normativas/{id_normativa}', 'API\NormativaController@getAll');
+
+/** GestionController */
+            Route::get('gestiones', 'API\GestionController@getAll');
+            Route::get('gestiones/{id_gestion}', 'API\GestionController@getAll');
+
+/** EducacionController */
+            Route::get('educaciones', 'API\EducacionController@getAll');
+
+/** PrecioController */
+            Route::get('precios', 'API\PrecioController@getAll');
+
+/** PreguntaController */
+            Route::get('preguntas', 'API\PreguntaController@getAll');
+
+/** SuscripcionController */
+            Route::get('suscripciones', 'API\SuscripcionController@getAll');
+            Route::get('facturaciones', 'API\SuscripcionController@getFacturaciones');
+        });
+    });
