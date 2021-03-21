@@ -238,15 +238,7 @@ Mutualcoop
 
 @section('js')
 <script src='https://www.google.com/recaptcha/api.js'></script>
-{{ no_captcha()->script() }}
-{{ no_captcha()->getApiScript() }}
-<script>
-    grecaptcha.ready(function() {
-        grecaptcha.execute('6LeWkKMUAAAAAAPHyfHEbW6GM1SU9al_y6c8XKZB', {action: 'homepage'}).then(function(token) {
-            $('.support-g-recaptcha-response').prepend('<input type="hidden" name="g-recaptcha-response" value="' + token + '">');
-        });
-    });
-</script>
+{!! no_captcha()->script() !!}
 <script>
     @if(Session::has('status'))
     const status = @json(Session::get('status'));

@@ -23,8 +23,8 @@
                         'telefono.required' => 'El teléfono es obligatorio.',
                         'telefono.numeric' => 'El teléfono debe ser un valor numérico.',
                         'mensaje.required' => 'El mensaje es obligatorio.',
-                        'g-recaptcha-response.required' => 'Verifica que eres un humano.',
-                        'g-recaptcha-response.captcha' => 'La verificación falló!.'
+                        // 'g-recaptcha-response.required' => 'Verifica que eres un humano.',
+                        // 'g-recaptcha-response.captcha' => 'La verificación falló!.'
                     ],
                 ],
             ],'consultar' => [
