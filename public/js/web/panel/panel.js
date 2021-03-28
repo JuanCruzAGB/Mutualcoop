@@ -1,10 +1,10 @@
 // * External repositories
-import { Sidebar } from '/submodules/SidebarJS/js/Sidebar.js';
-import { TabMenu } from '/submodules/TabMenuJS/js/TabMenu.js';
-import { Notification } from '/submodules/NotificationJS/js/Notification.js';
+import { Sidebar as SidebarJS } from '../../../submodules/SidebarJS/js/Sidebar.js';
+import { TabMenu as TabMenuJS } from '../../../submodules/TabMenuJS/js/TabMenu.js';
+import { Notification as NotificationJS } from '../../../submodules/NotificationJS/js/Notification.js';
 
-import { Filter } from '../../../submodules/FilterJS/js/Filter.js';
-import { LocalStorageServiceProvider } from '../../Providers/LocalStorageServiceProvider.js';
+import { Filter as FilterJS } from '../../../submodules/FilterJS/js/Filter.js';
+import { LocalStorageServiceProvider as LocalStorage } from '../../Providers/LocalStorageServiceProvider.js';
 import { LoadProgressBar } from '../../loaders.js';
 import { URL } from '../../URL.js';
 
@@ -198,7 +198,7 @@ function fillGestionesSection(section, current){
         }
     }
     section.filtrosClassName = ['filtrar_por_obras'];
-    section.filtros = new Filter({
+    section.filtros = new FilterJS({
         id: 'gestiones',
         order: {
             by: 'id_gestion',
@@ -285,7 +285,7 @@ function fillNormativasSection(section, current){
                     value: 'obras:nombre'
         }]},
     }};
-    section.filtros = new Filter({
+    section.filtros = new FilterJS({
         id: 'normativas',
         order: {
             by: 'id_normativa',
@@ -348,7 +348,7 @@ function fillEducacionesSection(section){
 
 function fillTablaCategoriasSection(section){
     section.filtrosClassName = ['tipo_de_gestion', 'filtrar_por_obras'];
-    section.filtros =  new Filter({
+    section.filtros =  new FilterJS({
         id: 'tabla_categorias',
         order: {
             by: 'id_categoria',
@@ -443,7 +443,7 @@ function fillTablaEducacionesSection(section){
 
 function fillTablaEventosSection(section){
     section.filtrosClassName = ['privado'];
-    section.filtros = new Filter({
+    section.filtros = new FilterJS({
         id: 'tabla_eventos',
         order: {
             by: 'fecha',
@@ -523,7 +523,7 @@ function fillTablaEventosSection(section){
 
 function fillTablaFacturacionesSection(section){
     section.filtrosClassName = ['tipo_de_suscripcion', 'mes', 'filtrar_por_obras'];
-    section.filtros = new Filter({
+    section.filtros = new FilterJS({
         id: 'tabla_facturaciones',
         order: {
             by: 'id_suscriptor',
@@ -632,7 +632,7 @@ function fillTablaFacturacionesSection(section){
 
 function fillTablaGestionesSection(section){
     section.filtrosClassName = ['tipo_de_gestion', 'filtrar_por_obras'];
-    section.filtros = new Filter({
+    section.filtros = new FilterJS({
         id: 'tabla_gestiones',
         order: {
             by: 'id_gestion',
@@ -710,7 +710,7 @@ function fillTablaGestionesSection(section){
 
 function fillTablaNormativasSection(section){
     section.filtrosClassName = ['tipo_de_normativa', 'filtrar_por_obras'];
-    section.filtros = new Filter({
+    section.filtros = new FilterJS({
         id: 'tabla_normativas',
         order: {
             by: 'id_normativa',
@@ -848,7 +848,7 @@ function fillTablaNoticiasSection(section){
 
 function fillTablaPreguntasSection(section){
     section.filtrosClassName = ['privado'];
-    section.filtros = new Filter({
+    section.filtros = new FilterJS({
         id: 'tabla_preguntas',
         order: {
             by: 'id_pregunta',
@@ -919,7 +919,7 @@ function fillTablaPreciosSection(section){
 
 function fillTablaSuscriptoresSection(section){
     section.filtrosClassName = ['tipo_de_suscripcion', 'filtrar_por_obras'];
-    section.filtros = new Filter({
+    section.filtros = new FilterJS({
         id: 'tabla_suscriptores',
         order: {
             by: 'id_suscriptor',
@@ -1026,7 +1026,7 @@ function fillTablaSuscriptoresSection(section){
 
 function fillTablaTemasSection(section){
     section.filtrosClassName = ['organismo', 'filtrar_por_obras'];
-    section.filtros = new Filter({
+    section.filtros = new FilterJS({
         id: 'tabla_temas',
         order: {
             by: 'id_tema',
@@ -1065,7 +1065,7 @@ function fillTablaTemasSection(section){
 
 function fillTablaUsuariosSection(section){
     section.filtrosClassName = ['nivel'];
-    section.filtros = new Filter({
+    section.filtros = new FilterJS({
         id: 'tabla_usuarios',
         order: {
             by: 'id_suscriptor',
@@ -1323,27 +1323,27 @@ function createTotalValue() {
 }
 
 async function load() {
-    let sidebar_tab = new Sidebar({
+    let sidebar_tab = new SidebarJS({
         id: 'tab',
         position: 'left',
     }, {
         open: false,
     });
 
-    let sidebar_filters = new Sidebar({
+    let sidebar_filters = new SidebarJS({
         id: 'filters',
         position: 'right',
     }, {
         open: false,
     });
 
-    let tabmenu = new TabMenu({
-        id: 'tab-1',
+    let tabmenu = new TabMenuJS({
+        id: 'tab',
     }, {
         open: (URL.findHashParameter()) ? [URL.findHashParameter()] : false,
     });
 
-    let LocalStorageInstance = LocalStorageServiceProvider.getData('mutualcoop_token');
+    let LocalStorageInstance = LocalStorage.getData('mutualcoop_token');
 
     let show = URL.findHashParameter();
 
@@ -1662,7 +1662,7 @@ async function load() {
 
         let notifications = [];
         for(const suscription of suscriptions){
-            notifications.push(new Notification({
+            notifications.push(new NotificationJS({
                 id: suscription.id,
                 code: 300,
                 message: suscription.message,
@@ -1675,7 +1675,7 @@ async function load() {
         }
     
         if(status){
-            notifications.push(new Notification({
+            notifications.push(new NotificationJS({
                 id: 'notification-1',
                 code: status.code,
                 message: status.message,

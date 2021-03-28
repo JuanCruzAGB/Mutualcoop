@@ -1,6 +1,7 @@
-import { NavMenu } from '../../submodules/NavMenuJS/js/NavMenu.js';
-import { Dropdown } from '../../submodules/DropdownJS/js/Dropdown.js';
-import { ScrollDetection } from '../../submodules/ScrollDetectionJS/js/ScrollDetection.js';
+// ? External repositories
+import { NavMenu as NavMenuJS } from '../../submodules/NavMenuJS/js/NavMenu.js';
+import { Dropdown as DropdownJS } from '../../submodules/DropdownJS/js/Dropdown.js';
+import { ScrollDetection as ScrollDetectionJS } from '../../submodules/ScrollDetectionJS/js/ScrollDetection.js';
 import { URLServiceProvider as URL } from "../../submodules/ProvidersJS/URLServiceProvider.js";
 
 function bigHeader(params) {
@@ -14,7 +15,7 @@ function commonHeader(params) {
 }
 
 document.addEventListener('DOMContentLoaded', (e) => {
-    let navmenu = new NavMenu({
+    let navmenu = new NavMenuJS({
         id: 'nav-1',
         sidebar: {
             id: ['menu'],
@@ -31,7 +32,7 @@ document.addEventListener('DOMContentLoaded', (e) => {
     let dropdowns = [];
     let dropdowns_html = document.querySelectorAll('.dropdown');
     for(const html of dropdowns_html){
-        dropdowns.push(new Dropdown({
+        dropdowns.push(new DropdownJS({
             id: html.id,
         }, {
             open: false,
@@ -39,12 +40,13 @@ document.addEventListener('DOMContentLoaded', (e) => {
     }
 
     if (URL.findOriginalRoute() == '/') {
-        let scrolldetection = new ScrollDetection({
+        let scrolldetection = new ScrollDetectionJS({
             location: {
                 min: 0,
                 max: 160,
-            }
-        }, {
+            }, direction: {
+                scrollbar: 'Y',
+        }}, {
             success: {
                 function: bigHeader,
                 params: [],

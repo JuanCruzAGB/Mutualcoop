@@ -4,7 +4,7 @@
             <!-- <img src="/img/recursos/logo.png" alt="Mututalcoops"> -->
             <h2>Tab Menu</h2>
         </div>
-        <a href="#" class="sidebar-button close-btn left">
+        <a href="#tab" class="sidebar-button close-btn left">
             <i class="sidebar-icon fas fa-times"></i>
         </a>
     </div>

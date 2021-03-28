@@ -1,14 +1,13 @@
 // * External repositories
-import { Dropdown } from '../../submodules/DropdownJS/js/Dropdown.js';
-import { Filter } from '../../submodules/FilterJS/js/Filter.js';
-import { NavMenu } from '../../submodules/NavMenuJS/js/NavMenu.js';
-import { Notification } from '../../submodules/NotificationJS/js/Notification.js';
-import { Sidebar } from '../../submodules/SidebarJS/js/Sidebar.js';
-import { TabMenu } from '../../submodules/TabMenuJS/js/TabMenu.js';
+import { Dropdown as DropdownJS } from '../../submodules/DropdownJS/js/Dropdown.js';
+import { NavMenu as NavMenuJS } from '../../submodules/NavMenuJS/js/NavMenu.js';
+import { Notification as NotificationJS } from '../../submodules/NotificationJS/js/Notification.js';
+import { Sidebar as SidebarJS } from '../../submodules/SidebarJS/js/Sidebar.js';
+import { TabMenu as TabMenuJS } from '../../submodules/TabMenuJS/js/TabMenu.js';
 import { URLServiceProvider as URL } from "../../submodules/ProvidersJS/URLServiceProvider.js";
 
 document.addEventListener('DOMContentLoaded', (e) => {
-    let navmenu = new NavMenu({
+    let navmenu = new NavMenuJS({
         id: 'nav-1',
         sidebar: {
             id: ['menu'],
@@ -21,6 +20,43 @@ document.addEventListener('DOMContentLoaded', (e) => {
         hideOnScrollDown: true,
         current: URL.findCompleteRoute(),
     });
+
+    if(document.querySelector('#tab')){
+        let sidebar_tab = new SidebarJS({
+            id: 'tab',
+            position: 'left',
+        });
+
+        let tabmenu = new TabMenuJS({
+            id: 'tab',
+        }, {
+            open: [document.querySelector('.tab-content').id],
+            active: URL.findOriginalRoute(),
+        });
+    }
+
+    if(document.querySelector('#filters')){
+        let sidebar_filters = new SidebarJS({
+            id: 'filters',
+            position: 'right',
+        });
+    }
+
+    let notifications = []
+    if(suscriptions){
+        for(const suscription of suscriptions){
+            notifications.push(new NotificationJS({
+                id: suscription.id,
+                code: 300,
+                message: suscription.message,
+                url: suscription.url,
+                method: suscription.method,
+            }, {show: true}, {
+                element: document.querySelector('.main > div'),
+                insertBefore: document.querySelector('.main > div').children[0]
+            }));
+        }
+    }
 
     let dropdowns = [];
     let dropdowns_html = document.querySelectorAll('.dropdown');
@@ -43,52 +79,15 @@ document.addEventListener('DOMContentLoaded', (e) => {
                 }
             }
         }
-        dropdowns.push(new Dropdown({
+        dropdowns.push(new DropdownJS({
             id: html.id,
         }, {
             open: booleanOpen,
         }));
     }
 
-    if(document.querySelector('#tab')){
-        let sidebar_tab = new Sidebar({
-            id: 'tab',
-            position: 'left',
-        });
-
-        let tabmenu = new TabMenu({
-            id: 'tab-1',
-        }, {
-            open: [document.querySelector('.tab-content').id],
-            active: URL.findOriginalRoute(),
-        });
-    }
-
-    if(document.querySelector('#filters')){
-        let sidebar_filters = new Sidebar({
-            id: 'filters',
-            position: 'right',
-        });
-    }
-
-    let notifications = []
-    if(suscriptions){
-        for(const suscription of suscriptions){
-            notifications.push(new Notification({
-                id: suscription.id,
-                code: 300,
-                message: suscription.message,
-                url: suscription.url,
-                method: suscription.method,
-            }, {show: true}, {
-                element: document.querySelector('.main > div'),
-                insertBefore: document.querySelector('.main > div').children[0]
-            }));
-        }
-    }
-
     if(status){
-        notifications.push(new Notification({
+        notifications.push(new NotificationJS({
             id: 'notification-1',
             code: status.code,
             message: status.message,

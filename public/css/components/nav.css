@@ -5,39 +5,49 @@
     --navmenu-background-color-alternative: var(--color-cuatro);
     --navmenu-icon-color: var(--color-tres);
     --navmenu-icon-color-alternative: var(--color-tres);
-
-    /* --color-one: var(--color-tres); */
-    /* * Titles */
-    /* --color-two: var(--color-uno); */
-    /* * Buttons */
-    /* --color-two-alternative: var(--color-dos); */
-    /* * Buttons efects */
-    /* --color-three: var(--color-cuatro); */
-    /* * Background */
-    /* --color-three-alternative: var(--color-cuatro); */
-    /* * Background efects */
-    /* --color-four: var(--color-dos); */
-    /* * Borders efects */
-    /* --color-four-alternative: var(--color-dos); */
-    /* * Borders efects */
-    /* --color-five: var(--color-tres); */
-    /* * Icons */
-    /* --color-five-alternative: var(--color-tres); */
-    /* * Icons efects */
 }
 
 .sidebar {
-    --color-five: var(--color-tres);
+    --sidebar-title-color: var(--color-tres);
+    --sidebar-button-color: var(--color-cinco);
+    --sidebar-button-color-alternative: var(--color-tres);
+    --sidebar-background-color: #fff;
+    --sidebar-background-color-alternative: #222;
+    --sidebar-border-color: #ddd;
+    --sidebar-border-color-alternative: #ddd;
+    --sidebar-icon-color: var(--color-tres);
+    --sidebar-icon-color-alternative: var(--color-tres);
 }
 
 .dropdown {
-    --color-three: var(--color-cuatro);
-    --color-five: var(--color-tres);
+    --dropdown-title-color: var(--color-cinco); /* ? * Titles */
+    --dropdown-title-color-alternative: var(--color-cinco); /* ? * Titles efects */
+    --dropdown-button-color: var(--color-cinco); /* ? * Buttons */
+    --dropdown-button-color-alternative: var(--color-tres); /* ? * Buttons efects */
+    --dropdown-background-color: var(--color-cuatro); /* ? * Background */
+    --dropdown-background-color-alternative: var(--color-cuatro); /* ? * Background efects */
+    --dropdown-border-color: #ddd; /* ? * Borders efects */
+    --dropdown-border-color-alternative: #ddd; /* ? * Borders efects */
+    --dropdown-icon-color: var(--color-cinco); /* ? * Icons */
+    --dropdown-icon-color-alternative: var(--color-tres); /* ? * Icons efects */
 }
 
 .floating-menu {
     --color-one: var(--color-tres);
     --color-two: var(--color-cuatro);
+}
+
+.tab-menu .tabs .tab .tab-link {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    min-height: 4.6rem;
+    color: var(--tabmenu-button-color);
+    background-color: var(--tabmenu-background-color);
+    padding: 1rem;
+    text-decoration: none;
+    transition: 500ms;
 }
 
 .tab-menu .tabs .tab>.tab-link:hover,

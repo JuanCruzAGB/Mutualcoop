@@ -39,7 +39,7 @@
             <span class="support support-box support-mensaje error pl-1 font-bold"></span>
         @endif
     </div>
-    {{-- {!! no_captcha()->display() !!} --}}
+    {!! no_captcha()->display() !!}
     @if($errors->has('g-recaptcha-response'))
         <span class="support support-box support-g-recaptcha-response error pl-1 font-bold">{{$errors->first('g-recaptcha-response')}}</span>
     @else

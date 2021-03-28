@@ -1,8 +1,8 @@
 // * External repositories
-import { Sidebar } from '/submodules/SidebarJS/js/Sidebar.js';
-import { TabMenu } from '/submodules/TabMenuJS/js/TabMenu.js';
+import { Sidebar as SidebarJS } from '../../../submodules/SidebarJS/js/Sidebar.js';
+import { TabMenu as TabMenuJS } from '../../../submodules/TabMenuJS/js/TabMenu.js';
 
-import { LocalStorageServiceProvider } from '../../Providers/LocalStorageServiceProvider.js';
+import { LocalStorageServiceProvider as LocalStorage } from '../../Providers/LocalStorageServiceProvider.js';
 
 // * Local Repository
 import { AdministradorSection } from './administrador.js';
@@ -272,22 +272,22 @@ function showSection(sectionToShow, reset = false){
 // }
 
 async function load(){
-    let sidebar_tab = new Sidebar({
+    let sidebar_tab = new SidebarJS({
         id: 'tab',
         position: 'left',
     }, {
         open: false,
     });
 
-    let sidebar_filters = new Sidebar({
+    let sidebar_filters = new SidebarJS({
         id: 'filters',
         position: 'right',
     }, {
         open: false,
     });
 
-    let tabmenu = new TabMenu({
-        id: 'tab-1',
+    let tabmenu = new TabMenuJS({
+        id: 'tab',
     }, {
         open: (window.location.href.split('#').pop()) ? [window.location.href.split('#').pop()] : false,
     });
@@ -565,7 +565,7 @@ async function load(){
     // });
 
 // * Traemos los datos por la api
-    let LocalStorageInstance = LocalStorageServiceProvider.getData('mutualcoop_token');
+    let LocalStorageInstance = LocalStorage.getData('mutualcoop_token');
 
     if(LocalStorageInstance.checkData()){
         if(usuario.id_nivel > 1){

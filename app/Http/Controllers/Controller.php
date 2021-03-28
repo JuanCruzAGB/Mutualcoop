@@ -20,7 +20,7 @@
 
         public function getAdminTabs(){
             return [(object)[
-                'url' => '#',
+                'url' => '#suscripcion',
                 'icon' => '',
                 'name' => 'Suscripción',
                 'slug' => 'Suscripción',
@@ -87,7 +87,7 @@
                         'icon' => 'fas fa-folder-open',
                         'name' => 'Recursos',
                 ], ], ], (object)[
-                    'url' => '#',
+                    'url' => '#otros',
                     'icon' => '',
                     'name' => 'Otros',
                     'slug' => 'otros',
@@ -113,7 +113,7 @@
                         'icon' => 'fas fa-rss',
                         'name' => 'Notas de Interés',
             ] ], ] ], ], (object)[
-                'url' => '#',
+                'url' => '#administracion',
                 'icon' => '',
                 'name' => 'Administración',
                 'slug' => 'administración',
@@ -159,7 +159,7 @@
                     'icon' => 'fas fa-users',
                     'name' => 'Usuarios',
             ] ], ], (object)[
-                'url' => '#',
+                'url' => '#vistas',
                 'icon' => '',
                 'name' => 'Vistas',
                 'slug' => 'vistas',
@@ -241,7 +241,7 @@
                     'icon' => 'fas fa-folder-open',
                     'name' => 'Recursos',
             ], ], ], (object)[
-                'url' => '#',
+                'url' => '#otros',
                 'icon' => '',
                 'name' => 'Otros',
                 'slug' => 'otros',
