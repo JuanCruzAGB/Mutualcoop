@@ -12,7 +12,7 @@
                     'correo' => 'required|email|max:100',
                     'telefono' => 'required|numeric',
                     'mensaje' => 'required',
-                    'g-recaptcha-response' => 'required|captcha',
+                    'g-recaptcha-response' => 'required',
                 ], 'messages' => [
                     'es' => [
                         'nombre.required' => 'El nombre es obligatorio.',
