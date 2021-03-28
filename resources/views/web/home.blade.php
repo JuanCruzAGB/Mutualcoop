@@ -237,16 +237,7 @@ Mutualcoop
 @endsection
 
 @section('js')
-{{ no_captcha()->script() }}
-{{ no_captcha()->getApiScript() }}
-
-<script>
-    grecaptcha.ready(() => {
-        window.noCaptcha.render('login', (token) => {
-            document.querySelector('#g-recaptcha-response').value = token;
-        });
-    });
-</script>
+{!! NoCaptcha::renderJs() !!}
 <script>
     @if(Session::has('status'))
     const status = @json(Session::get('status'));
