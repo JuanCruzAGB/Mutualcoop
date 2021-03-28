@@ -12,6 +12,7 @@
                     'correo' => 'required|email|max:100',
                     'telefono' => 'required|numeric',
                     'mensaje' => 'required',
+                    'g-recaptcha-response' => 'required|captcha',
                 ], 'messages' => [
                     'es' => [
                         'nombre.required' => 'El nombre es obligatorio.',
@@ -23,8 +24,8 @@
                         'telefono.required' => 'El teléfono es obligatorio.',
                         'telefono.numeric' => 'El teléfono debe ser un valor numérico.',
                         'mensaje.required' => 'El mensaje es obligatorio.',
-                        // 'g-recaptcha-response.required' => 'Verifica que eres un humano.',
-                        // 'g-recaptcha-response.captcha' => 'La verificación falló!.'
+                        'g-recaptcha-response.required' => 'Verifica que eres un humano.',
+                        'g-recaptcha-response.captcha' => 'La verificación falló!.'
                     ],
                 ],
             ],'consultar' => [

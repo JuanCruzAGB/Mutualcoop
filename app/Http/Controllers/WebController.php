@@ -74,7 +74,6 @@
             }
 
             $rules = Web::$validation['contactar']['rules'];
-            $rules['g-recaptcha-response'] = ['required', new CaptchaRule];
 
             return view('web.home', [
                 'noticias' => $noticias,
