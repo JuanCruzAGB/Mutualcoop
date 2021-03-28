@@ -35,5 +35,5 @@
 	path = public/submodules/ProvidersJS
 	url = https://github.com/JuanCruzAGB/ProvidersJS.git
 [submodule ".\\public\\submodules\\JuanCruzAGB"]
-	path = .\\public\\submodules\\JuanCruzAGB
+	path = public/submodules/JuanCruzAGB
 	url = https://github.com/JuanCruzAGB/JuanCruzAGB.git
