@@ -29,7 +29,6 @@
             $input = $request->input();
 
             $rules = Web::$validation['contactar']['rules'];
-            // $rules['g-recaptcha-response'] = ['required', new CaptchaRule];
             
             $validator = Validator::make($request->all(), $rules, Web::$validation['contactar']['messages']['es']);
             if($validator->fails()){
