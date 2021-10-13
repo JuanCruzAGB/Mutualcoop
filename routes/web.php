@@ -1,6 +1,6 @@
 <?php
 /** * WebController */
-    Route::get('/', 'WebController@inicio')->name('web.inicio');
+    Route::get('/', 'AuthController@showIngresar')->name('web.inicio');
     Route::middleware('auth')->group(function(){
         Route::get('/dashboard', 'WebController@dashboard')->name('web.dashboard');
     });
@@ -12,6 +12,8 @@
     Route::post('/cambiar-clave', 'CorreoController@cambiarClave')->name('correo.cambiarClave');
 
 /** * AuthController */
+    Route::get('/cambiar-clave', 'AuthController@showCambiarClave')->name('auth.showCambiarClave');
+    Route::get('/registrar', 'AuthController@showRegistrar')->name('auth.showRegistrar');
     Route::post('/registrar', 'AuthController@doRegistrar')->name('auth.doRegistrar');
     Route::get('/ingresar', 'AuthController@showIngresar')->name('auth.showIngresar');
     Route::post('/ingresar', 'AuthController@doIngresar')->name('auth.doIngresar');

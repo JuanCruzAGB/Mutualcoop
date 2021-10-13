@@ -157,7 +157,7 @@
     @endcomponent
 </section>
 
-<section id="hace-tu-consulta" class="proximos-eventos w-full">
+{{-- <section id="hace-tu-consulta" class="proximos-eventos w-full">
     <header class="my-8">
         <h2 class="text text-uno text-center text-3xl">
             <span class="text">Envia tu consulta</span> 
@@ -170,4 +170,4 @@
         ])
         @endcomponent
     </main>
-</section>
+</section> --}}

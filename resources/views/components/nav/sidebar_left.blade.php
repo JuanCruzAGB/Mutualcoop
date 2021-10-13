@@ -14,21 +14,21 @@
             <li><a href="/" class="sidebar-link sidebar-button nav-link p-0">
                 <span class="link-text">Inicio</span>
             </a></li>
-            <li><a href="/#nosotros" class="sidebar-link sidebar-button nav-link p-0">
+            {{-- <li><a href="/#nosotros" class="sidebar-link sidebar-button nav-link p-0">
                 <span class="link-text">Nosotros</span>
-            </a></li>
-            <li><a href="/#servicios" class="sidebar-link sidebar-button nav-link p-0">
+            </a></li> --}}
+            {{-- <li><a href="/#servicios" class="sidebar-link sidebar-button nav-link p-0">
                 <span class="link-text">Servicios</span>
-            </a></li>
+            </a></li> --}}
             <li><a href="/noticias" class="sidebar-link sidebar-button nav-link p-0">
                 <span class="link-text">Noticias</span>
             </a></li>
-            <li><a href="/#eventos" class="sidebar-link sidebar-button nav-link p-0">
+            {{-- <li><a href="/#eventos" class="sidebar-link sidebar-button nav-link p-0">
                 <span class="link-text">Eventos</span>
-            </a></li>
-            <li><a href="/#contacto" class="sidebar-link sidebar-button nav-link p-0">
+            </a></li> --}}
+            {{-- <li><a href="/#contacto" class="sidebar-link sidebar-button nav-link p-0">
                 <span class="link-text">Contacto</span>
-            </a></li>
+            </a></li> --}}
             @if(!Auth::user())
                 <li><a href="/ingresar" class="sidebar-link nav-link p-0">
                     <i class="link-icon left fas fa-sign-out-alt"></i>

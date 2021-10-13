@@ -86,9 +86,13 @@ let cols = [ {
         th: ['px-4', 'py-2', 'background', 'background-tres', 'text-white', 'text-xs'],
         td: ['border', 'px-4', 'py-2']
     }, }, { 
-    title: 'Tipo de Suscripción', data: 'suscripcion', classNames: {
+        title: 'Tipo de Suscripción', data: 'suscripcion', classNames: {
         th: ['px-4', 'py-2', 'background', 'background-tres', 'text-white', 'text-xs'],
         td: ['border', 'px-4', 'py-2', 'lg:whitespace-normal']
+    }, }, { 
+        title: 'Obras Suscriptas', data: 'obras', classNames: {
+        th: ['px-4', 'py-2', 'background', 'background-tres', 'text-white'],
+        td: ['border', 'px-4', 'py-2', 'lg:whitespace-normal', 'obras-suscriptas']
     }, }, { title: '', data: '{all}', classNames: {
         th: ['px-4', 'py-2', 'background', 'background-tres', 'text-white', 'text-xs'],
         td: ['border', 'px-4', 'py-2', 'lg:whitespace-normal', 'text-center']

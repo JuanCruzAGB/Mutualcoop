@@ -174,6 +174,12 @@
             <input class="form-submit registrar btn btn-dos p-2 px-8 mb-4 mt-2" type="submit" value="Registrate">
         </div>
     </div>
+    {!! app('captcha')->display() !!}
+    @if($errors->has('g-recaptcha-response'))
+        <span class="support support-box support-g-recaptcha-response error pl-1 font-bold">{{$errors->first('g-recaptcha-response')}}</span>
+    @else
+        <span class="support support-box support-g-recaptcha-response error pl-1 font-bold"></span>
+    @endif
     <div class="loguear text-center pb-8">
         <p>
             <span>¿Ya tenés cuenta?</span>

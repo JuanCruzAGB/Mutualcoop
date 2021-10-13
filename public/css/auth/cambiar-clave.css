@@ -1,12 +1,6 @@
 @import '../components/bg.css';
 @import '../components/text.css';
 @import '../components/loaders.css';
-#registrar,
-#registrar .step-2,
-#registrar .step-3,
-#cambiar_clave {
-    display: none;
-}
 
 .input-group {
     position: relative;

@@ -16,6 +16,12 @@
     <div class="flex items-center justify-center lg:justify-center py-4">
         <input class="form-submit cambiar_clave btn btn-dos p-2 px-8 my-4" type="submit" value="Enviar">
     </div>
+    {!! app('captcha')->display() !!}
+    @if($errors->has('g-recaptcha-response'))
+        <span class="support support-box support-g-recaptcha-response error pl-1 font-bold">{{$errors->first('g-recaptcha-response')}}</span>
+    @else
+        <span class="support support-box support-g-recaptcha-response error pl-1 font-bold"></span>
+    @endif
     <div class="loguear text-center pb-8">
         <p>
             <a class="change-view text text-tres" href="#ingresar">Inicia sesión</a>

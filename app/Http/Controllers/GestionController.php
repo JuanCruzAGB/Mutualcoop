@@ -123,7 +123,7 @@
             if($request->hasFile('archivo')){
                 switch($request->archivo->extension()){
                     case 'pdf':
-                        //
+                        Storage::put('gestiones', $request->file('archivo'));
                         break;
                     default:
                         $file = Image::make($request->file('archivo'))
@@ -131,11 +131,11 @@
                                     $constrait->aspectRatio();
                                     $constrait->upsize();
                                 });
+                                
+                        Storage::put($filepath, (string) $file->encode());
                         break;
                 }
             }
-                                
-            Storage::put($filepath, (string) $file->encode());
             
             $input->archivo = $filepath;
             
@@ -210,7 +210,7 @@
                 
                 switch($request->archivo->extension()){
                     case 'pdf':
-                        //
+                        Storage::put('gestiones', $request->file('archivo'));
                         break;
                     default:
                         $file = Image::make($request->file('archivo'))
@@ -218,10 +218,10 @@
                                     $constrait->aspectRatio();
                                     $constrait->upsize();
                                 });
+                                
+                        Storage::put($filepath, (string) $file->encode());
                         break;
                 }
-                                
-                Storage::put($filepath, (string) $file->encode());
                 
                 $input->archivo = $filepath;
             }else{

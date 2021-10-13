@@ -85,29 +85,23 @@
          * @param Request $request
          * @return [type]
          */
-        public function cambiarClave(Request $request){
-            $input = $this->makeInputsByExplode($request, 'cambiarClave_');
-            $validator = Validator::make($request->all(), AuthModel::$validation['cambiarClave']['send']['rules'], AuthModel::$validation['cambiarClave']['send']['messages']['es']);
-            if($validator->fails()){
-                return redirect('/ingresar#cambiar_clave')->withErrors($validator)->withInput();
-            }
+        public function cambiarClave (Request $request) {
+            $input = (object) $request->all();
             
-            if(!count(User::where('correo', '=', $input->dato)->get())){
-                if(!count(User::where('id_suscriptor', '=', $input->dato)->get())){
+            $request->validate(AuthModel::$validation['cambiar-clave']['send']['rules'], AuthModel::$validation['cambiar-clave']['send']['messages']['es']);
+            
+            $user = User::where('correo', '=', $input->dato)->first();
+            if (!$user) {
+                $user = User::where('id_suscriptor', '=', $input->dato)->first();
+                if (!$user) {
                     return redirect('/ingresar#cambiar_clave')->with('status', [
                         'code' => 404,
                         'message' => 'Correo o Número de Suscriptor incorrectos.',
                     ]);
-                }else{
-                    $type = 'id_suscriptor';
                 }
-            }else{
-                $type = 'correo';
             }
 
-            $user = User::where($type, '=', $input->dato)->get();
-            $user = $user[0];
-            if($user->estado < 1){
+            if ($user->estado < 1) {
                 return redirect('/ingresar#cambiar_clave')->with('status', [
                     'code' => 403,
                     'message' => 'Usuario baneado.',

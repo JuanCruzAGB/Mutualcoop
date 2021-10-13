@@ -1,0 +1,133 @@
+@import '../components/bg.css';
+@import '../components/text.css';
+@import '../components/loaders.css';
+
+#registrar .step-2,
+#registrar .step-3 {
+    display: none;
+}
+
+.input-group {
+    position: relative;
+}
+
+.change-view {
+    transition: 500ms;
+    color: var(--color-uno);
+}
+
+.change-view:hover {
+    color: var(--color-uno);
+}
+
+form input[type=text],
+input[type=number],
+input[type=password],
+input[type=email] {
+    border-bottom: 1px solid #ccc;
+    outline: none;
+}
+
+select {
+    border: 1px solid #ccc;
+}
+
+form input[type=text]:focus,
+input[type=password]:focus,
+input[type=number]:focus,
+input[type=email]:focus {
+    border-bottom: 1px solid var(--color-uno);
+    transition: 500ms;
+}
+
+.focus\:shadow-outline:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.ver-password {
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: calc(100% - 1px);
+    color: var(--color-uno);
+    transition: 500ms;
+}
+
+.ver-password:hover {
+    color: var(--color-uno);
+}
+
+
+/* Chrome, Safari, Edge, Opera */
+
+form input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+/* Firefox */
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.checkbox input[type="checkbox"] {
+    width: auto;
+    left: 0;
+    margin-left: -30px;
+}
+
+
+/* Reset de contraseña */
+
+input[name=cambiarClave_dato]::placeholder {
+    font-size: .98rem;
+}
+
+
+/* * MD */
+
+@media(min-width: 768px) {
+    /**/
+}
+
+
+/* LG */
+
+@media(min-width: 1024px) {
+    .checkbox input[type="checkbox"] {
+        width: auto;
+        left: 0;
+        margin-left: -15px;
+    }
+}
+
+
+/* XL */
+
+@media(min-width: 1200px) {
+    .checkbox input[type="checkbox"] {
+        width: auto;
+        left: 0;
+        margin-left: 10px;
+    }
+}
+
+@media(min-width: 1500px) {
+    .form-container {
+        width: 20%;
+    }
+    .checkbox input[type="checkbox"] {
+        width: auto;
+        left: 0;
+        margin-left: 20px;
+    }
+}

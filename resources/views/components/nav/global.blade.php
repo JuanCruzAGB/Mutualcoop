@@ -18,21 +18,21 @@
             <li><a href="/" class="nav-link">
                 <span class="link-text">Inicio</span>
             </a></li>
-            <li><a href="/#nosotros" class="nav-link">
+            {{-- <li><a href="/#nosotros" class="nav-link">
                 <span class="link-text">Nosotros</span>
-            </a></li>
-            <li><a href="/#servicios" class="nav-link">
+            </a></li> --}}
+            {{-- <li><a href="/#servicios" class="nav-link">
                 <span class="link-text">Servicios</span>
-            </a></li>
+            </a></li> --}}
             <li><a href="/noticias" class="nav-link">
                 <span class="link-text">Noticias</span>
             </a></li>
-            <li><a href="/#eventos" class="nav-link">
+            {{-- <li><a href="/#eventos" class="nav-link">
                 <span class="link-text">Eventos</span>
-            </a></li>
-            <li><a href="/#contacto" class="nav-link">
+            </a></li> --}}
+            {{-- <li><a href="/#contacto" class="nav-link">
                 <span class="link-text">Contacto</span>
-            </a></li>
+            </a></li> --}}
         @if(!Auth::user())
             <li><a href="/ingresar" class="nav-link">
                 <i class="link-icon left fas fa-sign-in-alt"></i>

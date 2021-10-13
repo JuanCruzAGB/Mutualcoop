@@ -11,6 +11,7 @@
     use App\Models\Tema;
     use App\Models\Tipo;
     use Auth;
+    use Carbon\Carbon;
     use Cviebrock\EloquentSluggable\Services\SlugService;
     use Illuminate\Http\Request;
     use Intervention\Image\ImageManagerStatic as Image;
@@ -120,13 +121,15 @@
             if($validator->fails()){
                 return redirect('/panel/normativa/crear')->withErrors($validator)->withInput();
             }
+
+            $input->fecha = Carbon::parse($input->fecha)->format('Y-m-d');
             
             $filepath = $request->file('archivo')->hashName('normativas');
             
             if($request->hasFile('archivo')){
                 switch($request->archivo->extension()){
                     case 'pdf':
-                        //
+                        Storage::put('normativas', $request->file('archivo'));
                         break;
                     default:
                         $file = Image::make($request->file('archivo'))
@@ -134,11 +137,11 @@
                                     $constrait->aspectRatio();
                                     $constrait->upsize();
                                 });
+
+                        Storage::put($filepath, (string) $file->encode());
                         break;
                 }
             }
-
-            Storage::put($filepath, (string) $file->encode());
             
             $input->archivo = $filepath;
             
@@ -162,7 +165,7 @@
                 Relacion::create((array) $inputRelacion);
             }
             
-            return redirect('/panel/normtivas')->with('status', [
+            return redirect('/panel/normativas')->with('status', [
                 'code' => 200,
                 'message' => 'Normativa subida correctamente.',
             ]);
@@ -223,6 +226,8 @@
             if(!isset($input->fecha)){
                 $input->fecha = $normativa->fecha;
             }
+
+            $input->fecha = Carbon::parse($input->fecha)->format('Y-m-d');
             
             if($request->hasFile('archivo')){
                 $archivo_actual = $normativa->archivo;
@@ -231,7 +236,7 @@
                 
                 switch($request->archivo->extension()){
                     case 'pdf':
-                        //
+                        Storage::put('normativas', $request->file('archivo'));
                         break;
                     default:
                         $file = Image::make($request->file('archivo'))
@@ -239,10 +244,10 @@
                                     $constrait->aspectRatio();
                                     $constrait->upsize();
                                 });
+
+                        Storage::put($filepath, (string) $file->encode());
                         break;
                 }
-
-                Storage::put($filepath, (string) $file->encode());
                 
                 $input->archivo = $filepath;
             }else{
