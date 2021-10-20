@@ -58,7 +58,8 @@
                             </li>
                         </ul>
                     </div>
-                    {!! app('captcha')->display() !!}
+                    {{-- {!! app('captcha')->display() !!} --}}
+                    {!! NoCaptcha::display() !!}
                     @if ($errors->has('g-recaptcha-response'))
                         <span class="support support-box support-g-recaptcha-response error pl-1 font-bold">{{ $errors->first('g-recaptcha-response') }}</span>
                     @else
@@ -83,6 +84,7 @@
 @endsection
 
 @section('js')
+    {!! NoCaptcha::renderJs() !!}
     <script>
         @if (Session::has('status'))
             const status = @json(Session::get('status'));
