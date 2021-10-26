@@ -42,4 +42,6 @@ document.addEventListener('DOMContentLoaded', function (e) {
     },{
         submit: true,
     }, validation.ingresar.rules, validation.ingresar.messages);
+
+    console.log(validacion.ingresar);
 });
