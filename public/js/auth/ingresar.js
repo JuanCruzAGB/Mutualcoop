@@ -41,7 +41,6 @@ document.addEventListener('DOMContentLoaded', function (e) {
         id: 'ingresar',
     },{
         submit: true,
+        ignore: ['g-recaptcha-response'],
     }, validation.ingresar.rules, validation.ingresar.messages);
-
-    console.log(validacion.ingresar);
 });
