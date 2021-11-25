@@ -116,6 +116,8 @@
                 }
             }
 
+            $clave = $input->clave;
+
             $input->estado = 1;
             $input->clave = \Hash::make($input->clave);
             $input->alta = Carbon::now()->format('Y-m-d');

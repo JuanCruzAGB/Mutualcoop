@@ -82,7 +82,7 @@ let filters = {
 
 // async function fillSuscriptorData(LocalStorageInstance){
 //     let data = {
-//         educaciones: await getData('/api/educaciones', LocalStorageInstance),
+//         educaciones: await getData('/api/notas-de-interes', LocalStorageInstance),
 //         gestiones: await getData('/api/gestiones', LocalStorageInstance),
 //         normativas: await getData('/api/normativas', LocalStorageInstance),
 //     };

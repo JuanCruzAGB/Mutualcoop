@@ -100,7 +100,7 @@
             
             Educacion::create((array) $input);
             
-            return redirect('/panel/educaciones')->with('status', [
+            return redirect('/panel/notas-de-interes')->with('status', [
                 'code' => 200,
                 'message' => 'Educación o Capacitación subida correctamente.',
             ]);
@@ -178,7 +178,7 @@
                 Storage::delete($archivo_actual);
             }
             
-            return redirect('/panel/educaciones')->with('status', [
+            return redirect('/panel/notas-de-interes')->with('status', [
                 'code' => 200,
                 'message' => "La Educación o Capacitación: \"$educacion->titulo\" fue editada exitosamente.",
             ]);
@@ -199,7 +199,7 @@
                 
             $educacion->delete();
             
-            return redirect('/panel/educaciones')->with('status', [
+            return redirect('/panel/notas-de-interes')->with('status', [
                 'code' => 200,
                 'message' => "La Educación o Capacitación fue eliminada exitosamente.",
             ]);

@@ -108,7 +108,7 @@
                         'icon' => 'fab fa-medium-m',
                         'name' => 'Ley de Mutuales',
                     ], (object)[
-                        'url' => '/educaciones',
+                        'url' => '/notas-de-interes',
                         'target' => '',
                         'icon' => 'fas fa-rss',
                         'name' => 'Notas de Interés',
@@ -139,7 +139,7 @@
                     'icon' => 'fas fa-newspaper',
                     'name' => 'Noticias',
                 ], (object)[
-                    'url' => '/panel/educaciones',
+                    'url' => '/panel/notas-de-interes',
                     'target' => '',
                     'icon' => 'fas fa-rss',
                     'name' => 'Notas de Interés',
@@ -262,7 +262,7 @@
                     'icon' => 'fab fa-medium-m',
                     'name' => 'Ley de Mutuales',
                 ], (object)[
-                    'url' => '/educaciones',
+                    'url' => '/notas-de-interes',
                     'target' => '',
                     'icon' => 'fas fa-rss',
                     'name' => 'Notas de Interés',

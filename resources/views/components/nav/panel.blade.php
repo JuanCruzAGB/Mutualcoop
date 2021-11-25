@@ -62,7 +62,7 @@
                             </a>
                         </li>
                         <li class="m-0">
-                            <a href="/panel/educaciones" class="dropdown-link nav-link">
+                            <a href="/panel/notas-de-interes" class="dropdown-link nav-link">
                                 <i class="link-icon fas fa-chevron-right"></i>
                                 <span class="link-text">Notas de Interés</span>
                             </a>

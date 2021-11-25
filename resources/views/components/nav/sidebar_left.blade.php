@@ -73,7 +73,7 @@
                             </a>
                         </li>
                         <li class="m-0">
-                            <a href="/panel/educaciones" class="sidebar-link dropdown-link nav-link p-0">
+                            <a href="/panel/notas-de-interes" class="sidebar-link dropdown-link nav-link p-0">
                                 <i class="link-icon left fas fa-chevron-right"></i>
                                 <span class="link-text">Notas de Interés</span>
                             </a>

@@ -10,7 +10,7 @@
                 'rules' => [
                     'dato' => 'required',
                     'clave' => 'required|min:4|max:40',
-                    'g-recaptcha-response' => 'required|captcha',
+                    // 'g-recaptcha-response' => 'required|captcha',
                 ], 'messages' => [
                     'es' => [
                         'dato.required' => 'El Correo o el número de suscriptor son obligatorios.',

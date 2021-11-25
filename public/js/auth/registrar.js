@@ -3,7 +3,9 @@ import { Notification } from "../../submodules/NotificationJS/js/Notification.js
 import { provincias } from "../provincias.js";
 
 function changeElements (option) {
+    console.log(obras);
     let obrasHTML = document.querySelectorAll('.obras li label');
+    console.log(obrasHTML);
     switch (option.value) {
         case '1':
             for (const obra of obras) {
@@ -11,7 +13,11 @@ function changeElements (option) {
                 if (float.split('.')[1] == '00') {
                     float = float.split('.')[0];
                 }
-                obrasHTML[parseInt(obra.id_obra) - 1].innerHTML = `${ obra.nombre } <span class="text text-tres">$${ float }</span>`;
+                for (const label of obrasHTML) {
+                    if (document.querySelector(`input#${ label.htmlFor }`).value == obra.id_obra) {
+                        label.innerHTML = `${ obra.nombre } <span class="text text-tres">$${ float }</span>`;
+                    }
+                }
             }
             document.querySelector('[name="cbu"]').classList.remove('hidden');
             document.querySelector('.support-cbu').classList.remove('hidden');
@@ -19,7 +25,11 @@ function changeElements (option) {
             break;
         case '3':
             for (const obra of obras) {
-                obrasHTML[parseInt(obra.id_obra) - 1].innerHTML = `${ obra.nombre } <span class="text text-tres">$${ obra.valor_anual }</span>`;
+                for (const label of obrasHTML) {
+                    if (document.querySelector(`input#${ label.htmlFor }`).value == obra.id_obra) {
+                        label.innerHTML = `${ obra.nombre } <span class="text text-tres">$${ obra.valor_anual }</span>`;
+                    }
+                }
             }
             document.querySelector('[name="cbu"]').classList.add('hidden');
             document.querySelector('.support-cbu').classList.add('hidden');

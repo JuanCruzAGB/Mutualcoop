@@ -126,7 +126,7 @@
                 </span>
                 <span class="w-full card-text">Ley de mutuales</span>
             </a>
-            <a href="/educaciones" class="btn btn-dos-transparent border acceso-directo w-5/12 md:w-2/12 lg:h-40 lg:w-40 mb-8 md:mx-4 md:mb-4 lg:mx-6 lg:mb-6 xl:mx-4 border-solid shadow-md bg-white text-center flex justify-center items-center flex-wrap rounded py-2">
+            <a href="/notas-de-interes" class="btn btn-dos-transparent border acceso-directo w-5/12 md:w-2/12 lg:h-40 lg:w-40 mb-8 md:mx-4 md:mb-4 lg:mx-6 lg:mb-6 xl:mx-4 border-solid shadow-md bg-white text-center flex justify-center items-center flex-wrap rounded py-2">
                 <span class="text-3xl w-full">
                     <i class="icon fas fa-rss"></i>
                 </span>
@@ -157,7 +157,7 @@
     @endcomponent
 </section>
 
-{{-- <section id="hace-tu-consulta" class="proximos-eventos w-full">
+<section id="hace-tu-consulta" class="proximos-eventos w-full">
     <header class="my-8">
         <h2 class="text text-uno text-center text-3xl">
             <span class="text">Envia tu consulta</span> 
@@ -170,4 +170,4 @@
         ])
         @endcomponent
     </main>
-</section> --}}
+</section>

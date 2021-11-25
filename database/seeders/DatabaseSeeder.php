@@ -7,7 +7,7 @@
          *
          * @return void
          */
-        public function run(){
-            $this->call(UserSeeder::class);
+        public function run () {
+            $this->call(\Database\Seeders\UserSeeder::class);
         }
     }

@@ -143,6 +143,11 @@
         const oldTemas = @json(old('temas'));
         const oldObras = @json(old('obras'));
         const validation = @json($validation);
+        @if(old('fecha'))
+            const fecha = @json(old('fecha'));
+        @else
+            const fecha = '';
+        @endif
     </script>
     <script src={{asset('submodules/InputFileMakerJS/js/InputFileMaker.js')}}></script>
     <script type="module" src={{ asset('js/datepicker/datepicker.min.js') }}></script>

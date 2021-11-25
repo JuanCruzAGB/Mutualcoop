@@ -120,7 +120,7 @@
                 </span>
                 <span class="w-full card-text">Normativa</span>
             </a>
-            <a href="/panel/educaciones" class="btn btn-dos-transparent border acceso-directo w-5/12 md:w-2/12 lg:h-40 lg:w-40 mb-8 md:mx-4 md:mb-4 lg:mx-6 lg:mb-6 xl:mx-4 border-solid shadow-md bg-white text-center flex justify-center items-center flex-wrap rounded py-2">
+            <a href="/panel/notas-de-interes" class="btn btn-dos-transparent border acceso-directo w-5/12 md:w-2/12 lg:h-40 lg:w-40 mb-8 md:mx-4 md:mb-4 lg:mx-6 lg:mb-6 xl:mx-4 border-solid shadow-md bg-white text-center flex justify-center items-center flex-wrap rounded py-2">
                 <span class="text-3xl w-full">
                 <i class="icon fas fa-rss"></i>
                 </span>

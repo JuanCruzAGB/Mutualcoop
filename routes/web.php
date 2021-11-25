@@ -102,9 +102,9 @@
         });
 
 /** * EducacionController */
-        Route::get('/educaciones', 'EducacionController@listado')->name('educacion.listado');
+        Route::get('/notas-de-interes', 'EducacionController@listado')->name('educacion.listado');
         Route::middleware('admin')->group(function(){
-            Route::get('/panel/educaciones', 'EducacionController@panel')->name('educacion.panel');
+            Route::get('/panel/notas-de-interes', 'EducacionController@panel')->name('educacion.panel');
             Route::get('/panel/educacion/crear', 'EducacionController@showCrear')->name('educacion.showCrear');
             Route::post('/educacion/crear', 'EducacionController@doCrear')->name('educacion.doCrear');
             Route::get('/panel/educacion/{slug}/editar', 'EducacionController@showEditar')->name('educacion.showEditar');

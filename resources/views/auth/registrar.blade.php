@@ -90,10 +90,11 @@
                                     <li>
                                         @if (is_array(old('obras')) && in_array($obra->id_obra, old('obras')))
                                             <input value="{{ $obra->id_obra }}" class="form-input" name="obras[{{ $obra->slug }}]" checked id="{{ $obra->slug }}" type="checkbox">
+                                            <label class="mt-2 obras" for="{{ $obra->slug }}">{{ $obra->nombre }}</label>
                                         @else
                                             <input value="{{ $obra->id_obra }}" class="form-input" name="obras[{{ $obra->slug }}]" id="{{ $obra->slug }}" type="checkbox">
+                                            <label class="mt-2 obras" for="{{ $obra->slug }}">{{ $obra->nombre }}</label>
                                         @endif
-                                        <label class="mt-2 obras" for="{{ $obra->slug }}">{{ $obra->nombre }}</label>
                                     </li>
                                 @endforeach
                             </ul>

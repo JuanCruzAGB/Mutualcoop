@@ -1364,14 +1364,14 @@ async function load() {
                 {id: 'informacion_coplementaria', url: '/api/gestiones/9'},
                 {id: 'jurisprudencia', url: '/api/gestiones/10'},
             ]},
-            {id: 'educaciones', url: '/api/educaciones'},
+            {id: 'educaciones', url: '/api/notas-de-interes'},
         ];
         let data = await getSuscriptorData(url_sections, tabmenu, LocalStorageInstance, show);
 
         if(usuario.id_nivel > 1){
             url_sections = [
                 {id: 'tabla_categorias', url: '/api/categorias'},
-                {id: 'tabla_educaciones', url: '/api/educaciones'},
+                {id: 'tabla_educaciones', url: '/api/notas-de-interes'},
                 {id: 'tabla_eventos', url: '/api/eventos'},
                 {id: 'tabla_facturaciones', url: '/api/facturaciones'},
                 {id: 'tabla_gestiones', url: '/api/gestiones'},
