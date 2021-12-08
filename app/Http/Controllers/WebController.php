@@ -97,6 +97,7 @@
             $eventos = Evento::orderBy('fecha', 'desc')->get();
             $eventos_pasados = collect([]);
             $preguntas = Pregunta::where('privado', '=', 1)->get();
+            $noticias = Noticia::orderBy('updated_at', 'DESC')->limit(3)->get();
 
             $usuarios = User::where('estado', '=', 2)->get();
 
@@ -141,6 +142,7 @@
                 'eventos_pasados' => $eventos_pasados,
                 'preguntas' => $preguntas,
                 'suscriptions' => $suscriptions,
+                'noticias' => $noticias,
                 'suscriptores' => (object) [
                     'total' => SuscripcionController::getTotal(),
                     'debito' => SuscripcionController::getDebito(),

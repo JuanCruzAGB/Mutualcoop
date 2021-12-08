@@ -38,6 +38,7 @@
         @endif
         @component('web.components.dashboard.usuario', [
             'eventos_pasados' => $eventos_pasados,
+            'noticias' => $noticias,
             'preguntas' => $preguntas,
             'validation' => $validation,
         ])

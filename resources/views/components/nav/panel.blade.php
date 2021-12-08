@@ -21,6 +21,9 @@
                 <span class="link-text">Iniciar Sesión</span>
             </a></li>
         @else
+            <li><a href="/noticias" class="nav-link">
+                <span class="link-text">Noticias</span>
+            </a></li>
             <li><a href="/dashboard#hace-tu-consulta" class="nav-link">
                 <span class="link-text">Hace tu consulta</span>
             </a></li>
