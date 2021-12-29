@@ -7,7 +7,7 @@
 @endif
     <header>
         <h3 class="eventos-card-header mt-4 px-4 text-2xl">{{$evento->titulo}}</h3>
-        <span class="block mb-4 text-gray-600">{{$evento->fecha}}</span>
+        {{-- <span class="block mb-4 text-gray-600">{{$evento->fecha}}</span> --}}
         @if($evento->privado)
             <div class="private">
                 <i class="icon fas fa-lock"></i>
@@ -22,7 +22,7 @@
         @endif
 
         <div class="evento-descripcion">
-            <p class="py-4 text-gray-600">{{$evento->descripcion}}</p>
+            <p class="py-4 text-gray-600">{!! $evento->descripcion !!}</p>
         </div>
     </main>
 </a>

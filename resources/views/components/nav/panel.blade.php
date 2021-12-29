@@ -7,7 +7,7 @@
             <i class="sidebar-icon fas fa-bars"></i>
         </a>
         
-        <a href="/" class="nav-title logo flex items-center">
+        <a href="https://mutualcoop.org.ar" target="_blank" class="nav-title logo flex items-center">
             <img src="/img/recursos/logo.png" alt="Mutualcoop">
             <h1>Mutualcoop</h1>
         </a>
@@ -29,7 +29,7 @@
             </a></li>
             @if(Auth::user()->id_nivel <= 1)
                 <li><a href="/dashboard" class="nav-link">
-                    <span class="link-text">Panel</span>
+                    <span class="link-text">Dashboard</span>
                 </a></li>
             @elseif(Auth::user()->id_nivel > 1)
                 <li id="dropdown-1" class="dropdown closed">

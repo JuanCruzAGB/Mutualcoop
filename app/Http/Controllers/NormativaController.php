@@ -50,7 +50,7 @@
             }
 
             if ($tipo_slug) {
-                $current = ucfirst($tipo_slug);
+                $current = $tipo->nombre;
             } else {
                 $current = 'undefined';
             }
@@ -384,7 +384,7 @@
         public function getListadoFiltros($normativas, $tipo_slug = null){
             if($tipo_slug){
                 return [
-                    'components.filtros.temas' => TemaController::getAll(null, $normativas),
+                    'components.filtros.temas' => TemaController::getAll(null, $normativas, $tipo_slug),
                 ];
             }else{
                 return [

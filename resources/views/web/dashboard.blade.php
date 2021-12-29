@@ -54,6 +54,12 @@
             <p class="lg:w-6/12 text-center mt-8 lg:mx-auto">Acabamos de enviar un email a la casilla que acaba de registrar. Por favor revise la bandeja de entrada o SPAM para confirmar que el correo electrónico es correcto.</p>
         </section>
     @endif
+
+    <aside class="floating-menu bottom right">
+        <a target="_blank" href="https://wa.me/5491167172626" class="floating-button whatsapp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </aside>
 @endsection
 
 @section('js')
