@@ -9,6 +9,9 @@
             'noticias' => $noticias,
         ])
         @endcomponent
+        <footer>
+            <a href="/noticias" class="btn btn-dos px-4 py-2 rounded">Leer todas</a>
+        </footer>
     </section>
 
     <section class="dashboard eventos_pasados flex flex-wrap justify-center items-center px-8">
@@ -48,7 +51,7 @@
                 <span class="text-3xl w-full">
                     <i class="fas fa-book-open"></i>
                 </span>
-                <span class="w-full card-text">Resolucion</span>
+                <span class="w-full card-text">Resolución</span>
             </a>
         </main>
     </section>
@@ -85,7 +88,7 @@
                 </span>
                 <span class="w-full card-text">Recursos</span>
             </a>
-            <a href="/gestiones/analisis-reglamentacion" class="btn btn-dos-transparent border acceso-directo w-5/12 md:w-2/12 lg:h-40 lg:w-40 mb-8 md:mx-4 md:mb-4 lg:mx-6 lg:mb-6 xl:mx-4 border-solid shadow-md bg-white text-center flex justify-center items-center flex-wrap rounded py-2">
+            <a href="/gestiones/analisis-de-la-reglamentacion" class="btn btn-dos-transparent border acceso-directo w-5/12 md:w-2/12 lg:h-40 lg:w-40 mb-8 md:mx-4 md:mb-4 lg:mx-6 lg:mb-6 xl:mx-4 border-solid shadow-md bg-white text-center flex justify-center items-center flex-wrap rounded py-2">
                 <span class="text-3xl w-full">
                     <i class="icon fas fa-search"></i>
                 </span>

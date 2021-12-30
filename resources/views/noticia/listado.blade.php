@@ -9,7 +9,7 @@
 @endsection
 
 @section('nav')
-    @component('components.nav.global', ['current' => 'inicio'])
+    @component('components.nav.panel', ['current' => 'inicio'])
     @endcomponent
 @endsection
 
