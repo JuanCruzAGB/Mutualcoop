@@ -1,7 +1,15 @@
 <section id="tabla_educaciones" class="tab-content closed">
     <section class="accesos-directos w-full">
-        <header class="pt-8">
-            <h2 class="text-center text-3xl">Listado de Notas de Interés</h2>
+        <header class="pt-8 flex justify-center items-center">
+            <a href="/dashboard" class="floating-button sidebar-button open-btn btn btn-seis left">
+                <i class="sidebar-icon"></i>
+                <span class="link-text">Volver</span>
+            </a>
+            <h2 class="text-center text-3xl inline">Listado de Notas de Interés</h2>
+            <a href="#filters" class="floating-button sidebar-button open-btn btn btn-seis right justify-end">
+				<i class="sidebar-icon fas"></i>
+				<span class="link-text">Filtros</span>
+			</a>
         </header>
 
         <section class="actions flex justify-center py-4">
