@@ -118,6 +118,13 @@
     color: #fff;
 }
 
+.btn.btn-seis {
+    --color-one: var(--color-uno);
+    color: var(--color-tres);
+    background-color: var(--color-seis);
+    --floatingmenu-icon-color: var(--color-tres);
+}
+
 .btn .icon {
     display: inline-block;
 }

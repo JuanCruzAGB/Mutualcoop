@@ -21,10 +21,7 @@
 @section('main')
 	<div id="tab" class="w-full relative tab-menu">
 		<div class="floating-menu top left">
-			<a href="#tab" class="floating-button sidebar-button open-btn btn btn-dos left">
-				<span class="link-text">Menú</span>
-				<i class="sidebar-icon fas fa-bars"></i>
-			</a>
+
 		</div>
 		@component('components.nav.sidebar_tab', [
 			'tabs' => $tabs,
@@ -40,10 +37,7 @@
 		</section>
 
 		<div class="floating-menu top right">
-			<a href="#filters" class="floating-button sidebar-button open-btn btn btn-dos right">
-				<i class="sidebar-icon fas fa-filter"></i>
-				<span class="link-text">Filtros</span>
-			</a>
+			
 		</div>
 
 		<div class="floating-menu bottom right">

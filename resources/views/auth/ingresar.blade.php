@@ -18,7 +18,7 @@
 
 @section('main')
     <section class="authentication w-full">
-        <header class="md:flex md:justify-center background background-ocho w-full flex-wrap">
+        <header class="md:flex md:justify-center background background-seis w-full flex-wrap">
             <section class="form-container mx-auto w-10/12 md:w-6/12 lg:w-5/12 px-6 py-12">
                 <form id="ingresar" class="auth-form px-4 rounded-lg lg:px-4 rounded w-full bg-white" action="/ingresar" method="post"
                     data-rules="{{ json_encode($validation['ingresar']['rules']) }}"

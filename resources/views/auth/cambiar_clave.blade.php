@@ -18,7 +18,7 @@
 
 @section('main')
     <section class="authentication w-full">
-        <header class="md:flex md:justify-center background background-ocho w-full">
+        <header class="md:flex md:justify-center background background-seis w-full">
             <section class="form-container mx-auto w-10/12 md:w-6/12 lg:w-5/12 px-6">
                 <form id="cambiar_clave" class="auth-form px-4 my-12 rounded-lg lg:px-4 rounded w-full bg-white"
                     action="/password/reset" method="post"
