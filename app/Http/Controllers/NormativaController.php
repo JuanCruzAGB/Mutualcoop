@@ -385,11 +385,13 @@
             if($tipo_slug){
                 return [
                     'components.filtros.temas' => TemaController::getAll(null, $normativas, $tipo_slug),
+                    'components.filtros.obras' => Obra::get(),
                 ];
             }else{
                 return [
                     'components.filtros.tipos_normativas' => $this::getAll($normativas),
                     'components.filtros.temas' => TemaController::getAll(null, $normativas),
+                    'components.filtros.obras' => Obra::get(),
                 ];
             }
         }

@@ -410,11 +410,13 @@
             if($tipo_slug){
                 return [
                     'components.filtros.categorias' => CategoriaController::getAll($gestiones),
+                    'components.filtros.obras' => Obra::get(),
                 ];
             }else{
                 return [
                     'components.filtros.tipos_gestiones' => $this::getAll($gestiones),
                     'components.filtros.categorias' => CategoriaController::getAll($gestiones),
+                    'components.filtros.obras' => Obra::get(),
                 ];
             }
         }

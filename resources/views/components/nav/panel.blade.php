@@ -7,7 +7,7 @@
             <i class="sidebar-icon fas fa-bars"></i>
         </a>
         
-        <a href="https://mutualcoop.org.ar" target="_blank" class="nav-title logo flex items-center">
+        <a href="https://suscriptores.mutualcoop.org.ar" target="_blank" class="nav-title logo flex items-center">
             <img src="/img/recursos/logo.png" alt="Mutualcoop">
             <h1>Mutualcoop</h1>
         </a>
