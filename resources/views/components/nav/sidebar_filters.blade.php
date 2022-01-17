@@ -10,14 +10,14 @@
 
     <div class="sidebar-content pb-4">
         @if($filtros)
-        @foreach($filtros as $filtro => $data)
-            @component($filtro, ['data' => $data])
-            @endcomponent
-        @endforeach
+            @foreach($filtros as $filtro => $data)
+                @component($filtro, ['data' => $data])
+                @endcomponent
+            @endforeach
         @else
-        <div class="sin_filtros text-center pt-4 text-gray-600">
-            <p>No hay por lo que filtrar</p>
-        </div>
+            <div class="sin_filtros text-center pt-4 text-gray-600">
+                <p>No hay por lo que filtrar</p>
+            </div>
         @endif
     </div>
 </section>

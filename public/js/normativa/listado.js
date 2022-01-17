@@ -62,6 +62,9 @@ document.addEventListener('DOMContentLoaded', function(e){
         }, {
             type: 'checkbox',
             target: 'temas',
+        }, {
+            type: 'checkbox',
+            target: 'obras',
         }], normativas);
 
         let newNormativa = filtros.execute();
