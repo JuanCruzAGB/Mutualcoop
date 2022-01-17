@@ -17,7 +17,7 @@
     <section class="dashboard eventos_pasados flex flex-wrap justify-center items-center px-8">
         <header class="my-8">
             <h2 class="text text-uno text-center font-medium text-3xl mb-0">
-                <span class="text">Eventos Pasados</span> 
+                <span class="text">Eventos</span> 
             </h2>
         </header>
         @component('components.evento.listado_pasados', [
