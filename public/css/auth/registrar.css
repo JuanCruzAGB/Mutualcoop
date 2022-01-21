@@ -7,6 +7,18 @@
     display: none;
 }
 
+form .step-1-button{
+    width: 12rem;
+}
+
+form .steps-div .step-button{
+    width: 12rem;
+}
+
+#registrar .step-2{
+    width: 19rem;
+}
+
 .input-group {
     position: relative;
 }

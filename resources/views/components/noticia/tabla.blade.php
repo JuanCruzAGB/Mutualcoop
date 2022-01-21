@@ -5,7 +5,7 @@
                 <i class="sidebar-icon"></i>
                 <span class="link-text">Volver</span>
             </a>
-            <h2 class="text-center text-3xl inline">Listado de Noticia</h2>
+            <h2 class="text-center text-3xl inline">Listado de Noticias</h2>
             <a href="#filters" class="floating-button sidebar-button open-btn btn btn-dos justify-center ml-4 py-2 right justify-end">
 				<i class="sidebar-icon fas"></i>
 				<span class="link-text">Filtros</span>
