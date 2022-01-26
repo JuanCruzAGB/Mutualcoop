@@ -1,12 +1,12 @@
 <section id="tabla_noticias" class="tab-content closed">
     <section class="accesos-directos w-full">
         <header class="pt-8 flex justify-center items-center">
-            <a href="/dashboard" class="floating-button sidebar-button open-btn btn btn-seis left">
+            <a href="/dashboard" class="floating-button sidebar-button open-btn btn btn-dos justify-center mr-4 py-2 left">
                 <i class="sidebar-icon"></i>
                 <span class="link-text">Volver</span>
             </a>
-            <h2 class="text-center text-3xl inline">Listado de Noticia</h2>
-            <a href="#filters" class="floating-button sidebar-button open-btn btn btn-seis right justify-end">
+            <h2 class="text-center text-3xl inline">Listado de Noticias</h2>
+            <a href="#filters" class="floating-button sidebar-button open-btn btn btn-dos justify-center ml-4 py-2 right justify-end">
 				<i class="sidebar-icon fas"></i>
 				<span class="link-text">Filtros</span>
 			</a>

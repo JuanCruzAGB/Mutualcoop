@@ -74,14 +74,14 @@
                         </header>
                         <div class="mb-4 flex justify-center flex-wrap mb-8 outline-none">
                             <select class="form-input p-3 outline-none bg-white" name="id_tipo_suscripcion" title="Campo obligatorio">
-                                <option {{ !old('id_tipo_suscripcion') ? 'selected' : '' }} disabled>Elige cada cuanto queres pagar *</option>
+                                <option {{ !old('id_tipo_suscripcion') ? 'selected' : '' }} disabled>Elige el tipo de suscripción  *</option>
                                 <option {{ old('id_tipo_suscripcion') == 1 ? 'selected' : '' }} value="1">Mensual</option>
                                 <option {{ old('id_tipo_suscripcion') == 3 ? 'selected' : '' }} value="3">Anual</option>
                             </select>
                             @if ($errors->has('id_tipo_suscripcion'))
-                                <span class="support support-box support-id_tipo_suscripcion error pl-1 font-bold w-full">{{ $errors->first('id_tipo_suscripcion') }}</span>
+                                <span class="support support-box support-id_tipo_suscripcion error pl-1 font-bold">{{ $errors->first('id_tipo_suscripcion') }}</span>
                             @else
-                                <span class="support support-box support-id_tipo_suscripcion error pl-1 font-bold w-full"></span>
+                                <span class="support support-box support-id_tipo_suscripcion error pl-1 font-bold"></span>
                             @endif
                         </div>
                         <div class="checkbox-obras w-8/12 mx-auto xl:w-8/12">
@@ -114,12 +114,12 @@
                                 <span class="support support-box support-cbu error pl-1 font-bold w-full"></span>
                             @endif
                         </div>
-                        <div class="flex items-center justify-center py-4">
-                            <a href="#step-1" class="step-button flex justify-center items-center btn btn-dos p-2 px-8 my-4 mr-2">
+                        <div class="flex items-center justify-center py-4 steps-div">
+                            <a href="#step-1" class="step-button flex justify-center items-center btn btn-dos p-2 my-4 mr-2">
                                 <i class="step-icon fas fa-arrow-left mr-2"></i>
                                 <span class="text">Paso anterior</span>
                             </a>
-                            <a href="#step-3" class="step-button step-2-button flex justify-center items-center btn btn-dos p-2 px-8 my-4 ml-2">
+                            <a href="#step-3" class="step-button step-2-button flex justify-center items-center btn btn-dos p-2 my-4 ml-2">
                                 <span class="text">Paso siguiente</span>
                                 <i class="step-icon fas fa-arrow-right ml-2"></i>
                             </a>
@@ -152,7 +152,7 @@
                             @endif
                         </div>
                         <div class="mb-4 flex justify-center flex-wrap outline-none">
-                            <select class="form-input p-3 outline-none bg-white" name="provincia" title="Campo obligatorio">
+                            <select class="form-input p-3 outline-none bg-white w-full" name="provincia" title="Campo obligatorio">
                                 <option {{ !old('provincia') ? 'selected' : '' }} disabled>Provincia *</option>
                             </select>
                             @if ($errors->has('provincia'))

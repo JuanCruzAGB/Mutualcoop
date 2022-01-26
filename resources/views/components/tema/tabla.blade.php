@@ -1,12 +1,12 @@
 <section id="tabla_temas" class="tab-content closed">
     <section class="accesos-directos w-full">
         <header class="pt-8 flex justify-center items-center">
-            <a href="/dashboard" class="floating-button sidebar-button open-btn btn btn-seis left">
+            <a href="/dashboard" class="floating-button sidebar-button open-btn btn btn-dos left justify-center mr-4">
                 <i class="sidebar-icon"></i>
                 <span class="link-text">Volver</span>
             </a>
             <h2 class="text-center text-3xl inline">Listado de Temas</h2>
-            <a href="#filters" class="floating-button sidebar-button open-btn btn btn-seis right justify-end">
+            <a href="#filters" class="floating-button sidebar-button open-btn btn btn-dos right justify-end justify-center ml-4">
 				<i class="sidebar-icon fas"></i>
 				<span class="link-text">Filtros</span>
 			</a>

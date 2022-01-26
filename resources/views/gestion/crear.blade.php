@@ -59,6 +59,27 @@
                         <span class="support support-box support-archivo error pl-1 font-bold w-full"></span>
                     @endif
                 </div>
+
+                <div class="checkbox-obras w-8/12 mx-auto xl:w-6/12">
+                    <ul class="obras my-8">
+                        @foreach($obras as $obra)
+                            <li class="checkbox mx-auto w-8/12 md:w-7/12 lg:w-10/12">
+                                @if(is_array(old('obras')) && in_array($obra->id_obra, old('obras')))
+                                    <input class="form-input obra" value="{{$obra->id_obra}}" name="obras[{{$obra->slug}}]" checked id="{{$obra->slug}}" type="checkbox">
+                                @else
+                                    <input class="form-input obra" value="{{$obra->id_obra}}" name="obras[{{$obra->slug}}]" id="{{$obra->slug}}" type="checkbox">
+                                @endif
+                                <label class="mt-2" for="{{$obra->slug}}">{{$obra->nombre}}</label>
+                            </li>
+                        @endforeach
+                    </ul>
+                </div>
+                    @if($errors->has('obras'))
+                        <span class="support support-box support-obras error pl-1 font-bold w-full">{{$errors->first('obras')}}</span>
+                    @else
+                        <span class="support support-box support-obras error pl-1 font-bold w-full"></span>
+                    @endif
+
                 <div class="mb-4 flex justify-center flex-wrap mb-8 outline-none">
                     <select class="form-input p-3 outline-none bg-white" name="id_tipo_gestion" title="Campo obligatorio">
                         <option {{ !old("id_tipo_gestion") ? 'selected' : '' }} disabled>Tipo de Gestión *: Seleccione alguna Obra primero</option>
@@ -79,25 +100,7 @@
                         <span class="support support-box support-id_categoria error pl-1 font-bold w-full"></span>
                     @endif
                 </div>
-                <div class="checkbox-obras w-8/12 mx-auto xl:w-6/12">
-                    <ul class="obras my-8">
-                        @foreach($obras as $obra)
-                            <li class="checkbox mx-auto w-8/12 md:w-7/12 lg:w-10/12">
-                                @if(is_array(old('obras')) && in_array($obra->id_obra, old('obras')))
-                                    <input class="form-input obra" value="{{$obra->id_obra}}" name="obras[{{$obra->slug}}]" checked id="{{$obra->slug}}" type="checkbox">
-                                @else
-                                    <input class="form-input obra" value="{{$obra->id_obra}}" name="obras[{{$obra->slug}}]" id="{{$obra->slug}}" type="checkbox">
-                                @endif
-                                <label class="mt-2" for="{{$obra->slug}}">{{$obra->nombre}}</label>
-                            </li>
-                        @endforeach
-                    </ul>
-                </div>
-                    @if($errors->has('obras'))
-                        <span class="support support-box support-obras error pl-1 font-bold w-full">{{$errors->first('obras')}}</span>
-                    @else
-                        <span class="support support-box support-obras error pl-1 font-bold w-full"></span>
-                    @endif
+               
                 <div class="flex items-center justify-center lg:justify-center py-4">
                     <input class="form-submit gestion-crear btn btn-dos p-2 px-8 my-4" type="submit" value="Crear Normativa">
                 </div>
