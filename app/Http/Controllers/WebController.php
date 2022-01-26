@@ -135,7 +135,6 @@
                     array_push($suscriptions, $suscription);
                 }
             }
-            
 
             return view('web.dashboard', [
                 'usuario' => $usuario,

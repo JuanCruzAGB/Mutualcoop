@@ -2,6 +2,7 @@
     namespace App\Http\Controllers;
 
     use App\Models\Categoria;
+    use App\Models\Gestion;
     use App\Models\Obra;
     use App\Models\Tipo;
     use App\Models\Union;

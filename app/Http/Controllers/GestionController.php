@@ -298,7 +298,7 @@
                 'administrativo_contable' => 0,
                 'impositivo' => 0,
                 'previsional' => 0,
-                'recursos' => 0,
+                'gestion_uif' => 0,
                 'analisis_reglamentacion' => 0,
                 'informacion_complementaria' => 0,
                 'jurisprudencia' => 0,
@@ -316,7 +316,7 @@
                         $tipos->previsional++;
                         break;
                     case 7:
-                        $tipos->recursos++;
+                        $tipos->gestion_uif++;
                         break;
                     case 8:
                         $tipos->analisis_reglamentacion++;
@@ -344,7 +344,7 @@
                 'administrativo_contable' => 0,
                 'impositivo' => 0,
                 'previsional' => 0,
-                'recursos' => 0,
+                'gestion_uif' => 0,
                 'analisis_reglamentacion' => 0,
                 'informacion_complementaria' => 0,
                 'jurisprudencia' => 0,
@@ -362,7 +362,7 @@
                         $tipos->previsional++;
                         break;
                     case 7:
-                        $tipos->recursos++;
+                        $tipos->gestion_uif++;
                         break;
                     case 8:
                         $tipos->analisis_reglamentacion++;

@@ -137,8 +137,8 @@ function setImportedData(show, tabmenu){
             sections.gestiones.current = 'previsional';
             showSection(sections.gestiones);
             break;
-        case 'recursos':
-            sections.gestiones.current = 'recursos';
+        case 'gestion_uif':
+            sections.gestiones.current = 'gestion_uif';
             showSection(sections.gestiones);
             break;
         case 'analisis_de_la_reglamentacion':
@@ -1359,7 +1359,7 @@ async function load() {
                 {id: 'administrativo_contable', url: '/api/gestiones/4'},
                 {id: 'impositivo', url: '/api/gestiones/5'},
                 {id: 'previsional', url: '/api/gestiones/6'},
-                {id: 'recursos', url: '/api/gestiones/7'},
+                {id: 'gestion_uif', url: '/api/gestiones/7'},
                 {id: 'analisis_reglamentacion', url: '/api/gestiones/8'},
                 {id: 'informacion_coplementaria', url: '/api/gestiones/9'},
                 {id: 'jurisprudencia', url: '/api/gestiones/10'},

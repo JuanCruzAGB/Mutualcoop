@@ -46,9 +46,9 @@
             </a>
         </li>
         <li class="tab">
-            <a href="#recursos" class="sidebar-link sidebar-button dropdown-link tab-button px-3">
+            <a href="#gestion_uif" class="sidebar-link sidebar-button dropdown-link tab-button px-3">
                 <i class="link-icon left mr-3"></i>
-                <span class="link-text">Recursos</span>
+                <span class="link-text">Gestión UIF</span>
             </a>
         </li>
         <li class="tab">

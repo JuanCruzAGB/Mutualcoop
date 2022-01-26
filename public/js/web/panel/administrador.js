@@ -243,7 +243,7 @@ function showSection(sectionToShow, reset = false){
 //             document.querySelector('[data-name=id_tipo_gestion-administrativo_contable] span:last-of-type').innerHTML = data.administrativo_contable;
 //             document.querySelector('[data-name=id_tipo_gestion-impositivo] span:last-of-type').innerHTML = data.impositivo;
 //             document.querySelector('[data-name=id_tipo_gestion-previsional] span:last-of-type').innerHTML = data.previsional;
-//             document.querySelector('[data-name=id_tipo_gestion-recursos] span:last-of-type').innerHTML = data.recursos;
+//             document.querySelector('[data-name=id_tipo_gestion-gestion_uif] span:last-of-type').innerHTML = data.gestion_uif;
 //             document.querySelector('[data-name=id_tipo_gestion-analisis_reglamentacion] span:last-of-type').innerHTML = data.analisis_reglamentacion;
 //             document.querySelector('[data-name=id_tipo_gestion-informacion_complementaria] span:last-of-type').innerHTML = data.informacion_complementaria;
 //             document.querySelector('[data-name=id_tipo_gestion-jurisprudencia] span:last-of-type').innerHTML = data.jurisprudencia;

@@ -22,9 +22,9 @@
     <i class="link-icon left icono-arg-barbijo"></i>
     <span class="link-text">Previsional</span>
 </a></li>
-<li class="tab"><a href="#recursos" class="sidebar-link sidebar-button tab-link tab-button p-0">
+<li class="tab"><a href="#gestion_uif" class="sidebar-link sidebar-button tab-link tab-button p-0">
     <i class="link-icon left icono-arg-barbijo"></i>
-    <span class="link-text">Recursos</span>
+    <span class="link-text">Gestión UIF</span>
 </a></li>
 <li class="tab"><a href="#analisis_reglamentacion" class="sidebar-link sidebar-button tab-link tab-button p-0">
     <i class="link-icon left icono-arg-barbijo"></i>

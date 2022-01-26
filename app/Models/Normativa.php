@@ -63,6 +63,30 @@
         public function relaciones(){
             return $this->hasMany(Relacion::class, 'id_normativa', 'id_normativa');
         }
+
+        /**
+         * * Scope a query to only include Normativas by the id_tipo_normativa.
+         * @param  \Illuminate\Database\Eloquent\Builder  $query
+         * @param  int  $id_user
+         * @return \Illuminate\Database\Eloquent\Builder
+         */
+        public function scopeByTipo ($query, int $id_tipo_normativa) {
+            return $query->where('id_tipo_normativa', $id_tipo_normativa);
+        }
+
+        /**
+         * * Scope a query to only include Normativas by the User.
+         * @param  \Illuminate\Database\Eloquent\Builder  $query
+         * @param  int  $id_user
+         * @return \Illuminate\Database\Eloquent\Builder
+         */
+        public function scopeByUser ($query, int $id_user) {
+            return $query->Join('relaciones', 'relaciones.id_normativa', '=', 'normativas.id_normativa')
+                ->Join('obras', 'relaciones.id_obra', '=', 'obras.id_obra')
+                ->Join('suscripciones', 'obras.id_obra', '=', 'suscripciones.id_obra')
+                ->Join('users', 'suscripciones.id_usuario', '=', 'users.id_usuario')
+                ->where('users.id_usuario', $id_user);
+        }
         
         /** @var array The validation rules & messages. */
         public static $validation = [

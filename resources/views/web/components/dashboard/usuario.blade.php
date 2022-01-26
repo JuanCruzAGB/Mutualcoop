@@ -17,7 +17,7 @@
     <section class="dashboard eventos_pasados flex flex-wrap justify-center items-center px-8">
         <header class="my-8">
             <h2 class="text text-uno text-center font-medium text-3xl mb-0">
-                <span class="text">Eventos Pasados</span> 
+                <span class="text">Eventos</span> 
             </h2>
         </header>
         @component('components.evento.listado_pasados', [
@@ -35,24 +35,30 @@
         </header>
 
         <main class="cards flex flex-wrap justify-around md:justify-center pt-8">
-            <a href="/normativas/ley" class="btn btn-dos-transparent border acceso-directo w-5/12 md:w-2/12 lg:h-40 lg:w-40 mb-8 md:mx-4 md:mb-4 lg:mx-6 lg:mb-6 xl:mx-4 border-solid shadow-md bg-white text-center flex justify-center items-center flex-wrap rounded py-2">
-                <span class="text-3xl w-full">
-                    <i class="icon fas fa-gavel"></i>
-                </span>
-                <span class="w-full card-text">Ley</span>
-            </a>
-            <a href="/normativas/decreto" class="btn btn-dos-transparent border acceso-directo w-5/12 md:w-2/12 lg:h-40 lg:w-40 mb-8 md:mx-4 md:mb-4 lg:mx-6 lg:mb-6 xl:mx-4 border-solid shadow-md bg-white text-center flex justify-center items-center flex-wrap rounded py-2">
-                <span class="text-3xl w-full">
-                    <i class="icon fas fa-book-reader"></i>
-                </span>
-                <span class="w-full card-text">Decreto</span>
-            </a>
-            <a href="/normativas/resolucion" class="btn btn-dos-transparent border acceso-directo w-5/12 md:w-2/12 lg:h-40 lg:w-40 mb-8 md:mx-4 md:mb-4 lg:mx-6 lg:mb-6 xl:mx-4 border-solid shadow-md bg-white text-center flex justify-center items-center flex-wrap rounded py-2">
-                <span class="text-3xl w-full">
-                    <i class="fas fa-book-open"></i>
-                </span>
-                <span class="w-full card-text">Resolución</span>
-            </a>
+            @if (\App\Models\Normativa::byUser(Auth::user()->id_usuario)->byTipo(1)->count())
+                <a href="/normativas/ley" class="btn btn-dos-transparent border acceso-directo w-5/12 md:w-2/12 lg:h-40 lg:w-40 mb-8 md:mx-4 md:mb-4 lg:mx-6 lg:mb-6 xl:mx-4 border-solid shadow-md bg-white text-center flex justify-center items-center flex-wrap rounded py-2">
+                    <span class="text-3xl w-full">
+                        <i class="icon fas fa-gavel"></i>
+                    </span>
+                    <span class="w-full card-text">Ley</span>
+                </a>
+            @endif
+            @if (\App\Models\Normativa::byUser(Auth::user()->id_usuario)->byTipo(2)->count())
+                <a href="/normativas/decreto" class="btn btn-dos-transparent border acceso-directo w-5/12 md:w-2/12 lg:h-40 lg:w-40 mb-8 md:mx-4 md:mb-4 lg:mx-6 lg:mb-6 xl:mx-4 border-solid shadow-md bg-white text-center flex justify-center items-center flex-wrap rounded py-2">
+                    <span class="text-3xl w-full">
+                        <i class="icon fas fa-book-reader"></i>
+                    </span>
+                    <span class="w-full card-text">Decreto</span>
+                </a>
+            @endif
+            @if (\App\Models\Normativa::byUser(Auth::user()->id_usuario)->byTipo(3)->count())
+                <a href="/normativas/resolucion" class="btn btn-dos-transparent border acceso-directo w-5/12 md:w-2/12 lg:h-40 lg:w-40 mb-8 md:mx-4 md:mb-4 lg:mx-6 lg:mb-6 xl:mx-4 border-solid shadow-md bg-white text-center flex justify-center items-center flex-wrap rounded py-2">
+                    <span class="text-3xl w-full">
+                        <i class="fas fa-book-open"></i>
+                    </span>
+                    <span class="w-full card-text">Resolución</span>
+                </a>
+            @endif
         </main>
     </section>
     
@@ -64,48 +70,62 @@
         </header>
 
         <main class="cards flex flex-wrap justify-around md:justify-center pt-8">
-            <a href="/gestiones/administrativo-contable" class="btn btn-dos-transparent border acceso-directo w-5/12 md:w-2/12 lg:h-40 lg:w-40 mb-8 md:mx-4 md:mb-4 lg:mx-6 lg:mb-6 xl:mx-4 border-solid shadow-md bg-white text-center flex justify-center items-center flex-wrap rounded py-2">
-                <span class="text-3xl w-full">
-                    <i class="icon fas fa-sort-numeric-up"></i>
-                </span>
-                <span class="w-full card-text">Administrativo Contable</span>
-            </a>
-            <a href="/gestiones/impositivo" class="btn btn-dos-transparent border acceso-directo w-5/12 md:w-2/12 lg:h-40 lg:w-40 mb-8 md:mx-4 md:mb-4 lg:mx-6 lg:mb-6 xl:mx-4 border-solid shadow-md bg-white text-center flex justify-center items-center flex-wrap rounded py-2">
-                <span class="text-3xl w-full">
-                    <i class="icon fas fa-percentage"></i>
-                </span>
-                <span class="w-full card-text">Impositivo</span>
-            </a>
-            <a href="/gestiones/previsional" class="btn btn-dos-transparent border acceso-directo w-5/12 md:w-2/12 lg:h-40 lg:w-40 mb-8 md:mx-4 md:mb-4 lg:mx-6 lg:mb-6 xl:mx-4 border-solid shadow-md bg-white text-center flex justify-center items-center flex-wrap rounded py-2">
-                <span class="text-3xl w-full">
-                    <i class="icon fas fa-briefcase"></i>
-                </span>
-                <span class="w-full card-text">Previsional</span>
-            </a>
-            <a href="/gestiones/recursos" class="btn btn-dos-transparent border acceso-directo w-5/12 md:w-2/12 lg:h-40 lg:w-40 mb-8 md:mx-4 md:mb-4 lg:mx-6 lg:mb-6 xl:mx-4 border-solid shadow-md bg-white text-center flex justify-center items-center flex-wrap rounded py-2">
-                <span class="text-3xl w-full">
-                    <i class="icon fas fa-folder-open"></i>
-                </span>
-                <span class="w-full card-text">Recursos</span>
-            </a>
-            <a href="/gestiones/analisis-de-la-reglamentacion" class="btn btn-dos-transparent border acceso-directo w-5/12 md:w-2/12 lg:h-40 lg:w-40 mb-8 md:mx-4 md:mb-4 lg:mx-6 lg:mb-6 xl:mx-4 border-solid shadow-md bg-white text-center flex justify-center items-center flex-wrap rounded py-2">
-                <span class="text-3xl w-full">
-                    <i class="icon fas fa-search"></i>
-                </span>
-                <span class="w-full card-text">Análisis de la Reglamentación</span>
-            </a>
-            <a href="/gestiones/informacion-complementaria" class="btn btn-dos-transparent border acceso-directo w-5/12 md:w-2/12 lg:h-40 lg:w-40 mb-8 md:mx-4 md:mb-4 lg:mx-6 lg:mb-6 xl:mx-4 border-solid shadow-md bg-white text-center flex justify-center items-center flex-wrap rounded py-2">
-                <span class="text-3xl w-full">
-                    <i class="icon fas fa-layer-group"></i>
-                </span>
-                <span class="w-full card-text">Información Complementaria</span>
-            </a>
-            <a href="/gestiones/jurisprudencia" class="btn btn-dos-transparent border acceso-directo w-5/12 md:w-2/12 lg:h-40 lg:w-40 mb-8 md:mx-4 md:mb-4 lg:mx-6 lg:mb-6 xl:mx-4 border-solid shadow-md bg-white text-center flex justify-center items-center flex-wrap rounded py-2">
-                <span class="text-3xl w-full">
-                    <i class="icon fas fa-code-branch"></i>
-                </span>
-                <span class="w-full card-text">Jurisprudencia</span>
-            </a>
+            @if (\App\Models\Gestion::byUser(Auth::user()->id_usuario)->byTipo(4)->count())
+                <a href="/gestiones/administrativo-contable" class="btn btn-dos-transparent border acceso-directo w-5/12 md:w-2/12 lg:h-40 lg:w-40 mb-8 md:mx-4 md:mb-4 lg:mx-6 lg:mb-6 xl:mx-4 border-solid shadow-md bg-white text-center flex justify-center items-center flex-wrap rounded py-2">
+                    <span class="text-3xl w-full">
+                        <i class="icon fas fa-sort-numeric-up"></i>
+                    </span>
+                    <span class="w-full card-text">Administrativo Contable</span>
+                </a>
+            @endif
+            @if (\App\Models\Gestion::byUser(Auth::user()->id_usuario)->byTipo(5)->count())
+                <a href="/gestiones/impositivo" class="btn btn-dos-transparent border acceso-directo w-5/12 md:w-2/12 lg:h-40 lg:w-40 mb-8 md:mx-4 md:mb-4 lg:mx-6 lg:mb-6 xl:mx-4 border-solid shadow-md bg-white text-center flex justify-center items-center flex-wrap rounded py-2">
+                    <span class="text-3xl w-full">
+                        <i class="icon fas fa-percentage"></i>
+                    </span>
+                    <span class="w-full card-text">Impositivo</span>
+                </a>
+            @endif
+            @if (\App\Models\Gestion::byUser(Auth::user()->id_usuario)->byTipo(6)->count())
+                <a href="/gestiones/previsional" class="btn btn-dos-transparent border acceso-directo w-5/12 md:w-2/12 lg:h-40 lg:w-40 mb-8 md:mx-4 md:mb-4 lg:mx-6 lg:mb-6 xl:mx-4 border-solid shadow-md bg-white text-center flex justify-center items-center flex-wrap rounded py-2">
+                    <span class="text-3xl w-full">
+                        <i class="icon fas fa-briefcase"></i>
+                    </span>
+                    <span class="w-full card-text">Previsional</span>
+                </a>
+            @endif
+            @if (\App\Models\Gestion::byUser(Auth::user()->id_usuario)->byTipo(7)->count())
+                <a href="/gestiones/gestion-uif" class="btn btn-dos-transparent border acceso-directo w-5/12 md:w-2/12 lg:h-40 lg:w-40 mb-8 md:mx-4 md:mb-4 lg:mx-6 lg:mb-6 xl:mx-4 border-solid shadow-md bg-white text-center flex justify-center items-center flex-wrap rounded py-2">
+                    <span class="text-3xl w-full">
+                        <i class="icon fas fa-folder-open"></i>
+                    </span>
+                    <span class="w-full card-text">Gestión UIF</span>
+                </a>
+            @endif
+            @if (\App\Models\Gestion::byUser(Auth::user()->id_usuario)->byTipo(8)->count())
+                <a href="/gestiones/analisis-de-la-reglamentacion" class="btn btn-dos-transparent border acceso-directo w-5/12 md:w-2/12 lg:h-40 lg:w-40 mb-8 md:mx-4 md:mb-4 lg:mx-6 lg:mb-6 xl:mx-4 border-solid shadow-md bg-white text-center flex justify-center items-center flex-wrap rounded py-2">
+                    <span class="text-3xl w-full">
+                        <i class="icon fas fa-search"></i>
+                    </span>
+                    <span class="w-full card-text">Análisis de la Reglamentación</span>
+                </a>
+            @endif
+            @if (\App\Models\Gestion::byUser(Auth::user()->id_usuario)->byTipo(9)->count())
+                <a href="/gestiones/informacion-complementaria" class="btn btn-dos-transparent border acceso-directo w-5/12 md:w-2/12 lg:h-40 lg:w-40 mb-8 md:mx-4 md:mb-4 lg:mx-6 lg:mb-6 xl:mx-4 border-solid shadow-md bg-white text-center flex justify-center items-center flex-wrap rounded py-2">
+                    <span class="text-3xl w-full">
+                        <i class="icon fas fa-layer-group"></i>
+                    </span>
+                    <span class="w-full card-text">Información Complementaria</span>
+                </a>
+            @endif
+            @if (\App\Models\Gestion::byUser(Auth::user()->id_usuario)->byTipo(10)->count())
+                <a href="/gestiones/jurisprudencia" class="btn btn-dos-transparent border acceso-directo w-5/12 md:w-2/12 lg:h-40 lg:w-40 mb-8 md:mx-4 md:mb-4 lg:mx-6 lg:mb-6 xl:mx-4 border-solid shadow-md bg-white text-center flex justify-center items-center flex-wrap rounded py-2">
+                    <span class="text-3xl w-full">
+                        <i class="icon fas fa-code-branch"></i>
+                    </span>
+                    <span class="w-full card-text">Jurisprudencia</span>
+                </a>
+            @endif
         </main>
     </section>
     

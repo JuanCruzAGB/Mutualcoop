@@ -82,10 +82,10 @@
                         'icon' => 'fas fa-briefcase',
                         'name' => 'Previsional',
                     ], (object)[
-                        'url' => '/gestiones/recursos',
+                        'url' => '/gestiones/gestion-uif',
                         'target' => '',
                         'icon' => 'fas fa-folder-open',
-                        'name' => 'Recursos',
+                        'name' => 'Gestión UIF',
                 ], ], ], (object)[
                     'url' => '#otros',
                     'icon' => '',
@@ -236,10 +236,10 @@
                     'icon' => 'fas fa-briefcase',
                     'name' => 'Previsional',
                 ], (object)[
-                    'url' => '/gestiones/recursos',
+                    'url' => '/gestiones/gestion-uif',
                     'target' => '',
                     'icon' => 'fas fa-folder-open',
-                    'name' => 'Recursos',
+                    'name' => 'Gestión UIF',
             ], ], ], (object)[
                 'url' => '#otros',
                 'icon' => '',

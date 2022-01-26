@@ -41,6 +41,14 @@
         }
 
         /**
+         * * Get all of the Gestiones for the User.
+         * @return \Illuminate\Database\Eloquent\Relations\HasManyThrough
+         */
+        public function obras () {
+            return $this->hasManyThrough(Obra::class, Suscripcion::class, 'id_usuario', 'id_obra', 'id_usuario', 'id_obra');
+        }
+
+        /**
          * * Get all the Suscripciones who match with the primary key.
          * @return [type]
          */
@@ -52,17 +60,17 @@
          * * Get all the Obras who match with the primary key.
          * @return [type]
          */
-        static public function obras($user){
-            $obras = collect([]);
-            $suscripciones = Suscripcion::where('id_usuario', '=', $user->id_usuario)->get();
-            foreach($suscripciones as $suscripcion){
-                $obras_segun_suscripcion = Obra::where('id_obra', "=", $suscripcion->id_obra)->get();
-                foreach($obras_segun_suscripcion as $obra){
-                    $obras->push($obra);
-                }
-            }
-            return $obras;
-        }
+        // static public function obras($user){
+        //     $obras = collect([]);
+        //     $suscripciones = Suscripcion::where('id_usuario', '=', $user->id_usuario)->get();
+        //     foreach($suscripciones as $suscripcion){
+        //         $obras_segun_suscripcion = Obra::where('id_obra', "=", $suscripcion->id_obra)->get();
+        //         foreach($obras_segun_suscripcion as $obra){
+        //             $obras->push($obra);
+        //         }
+        //     }
+        //     return $obras;
+        // }
         
         /** @var array The validation rules & messages. */
         public static $validation = [

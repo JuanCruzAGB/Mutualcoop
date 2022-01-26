@@ -36,9 +36,9 @@ if(window.location.href.split('#').length > 1){
                     gestiones_tabla.changeData([]);
                 }
             break;
-        case 'recursos':
-                if(gestiones.recursos.gestiones.length){
-                    gestiones_tabla.changeData(gestiones.recursos.gestiones);
+        case 'gestion_uif':
+                if(gestiones.gestion_uif.gestiones.length){
+                    gestiones_tabla.changeData(gestiones.gestion_uif.gestiones);
                 }else{
                     gestiones_tabla.changeData([]);
                 }

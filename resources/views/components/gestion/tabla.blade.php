@@ -45,12 +45,12 @@
                 </span>
                 <span class="w-full">Previsional</span>
             </button>
-            <button data-name="id_tipo_gestion-recursos" data-target="id_tipo_gestion" value="7"
+            <button data-name="id_tipo_gestion-gestion_uif" data-target="id_tipo_gestion" value="7"
                 class="filter filter-button btn btn-dos-transparent border acceso-directo w-5/12 md:w-2/12 lg:h-40 lg:w-40 mb-8 md:mx-4 md:mb-4 lg:mx-6 lg:mb-6 xl:mx-4 border-solid shadow-md bg-white text-center flex justify-center items-center flex-wrap rounded py-2">
                 <span class="text-3xl w-full">
-                    <span>{{$tipos->recursos}}</span>
+                    <span>{{$tipos->gestion_uif}}</span>
                 </span>
-                <span class="w-full">Recursos</span>
+                <span class="w-full">Gestión UIF</span>
             </button>
             <button data-name="id_tipo_gestion-analisis_reglamentacion" data-target="id_tipo_gestion" value="8"
                 class="filter filter-button btn btn-dos-transparent border acceso-directo w-5/12 md:w-2/12 lg:h-40 lg:w-40 mb-8 md:mx-4 md:mb-4 lg:mx-6 lg:mb-6 xl:mx-4 border-solid shadow-md bg-white text-center flex justify-center items-center flex-wrap rounded py-2">

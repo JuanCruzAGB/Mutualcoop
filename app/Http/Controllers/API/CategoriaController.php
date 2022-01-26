@@ -23,7 +23,7 @@
             $administrativo_contable = 0;
             $impositivo = 0;
             $previsional = 0;
-            $recursos = 0;
+            $gestion_uif = 0;
             $analisis_reglamentacion = 0;
             $informacion_complementaria = 0;
             $jurisprudencia = 0;
@@ -45,7 +45,7 @@
                         $previsional++;
                         break;
                     case 7:
-                        $recursos++;
+                        $gestion_uif++;
                         break;
                     case 8:
                         $analisis_reglamentacion++;
@@ -68,7 +68,7 @@
                     'administrativo_contable' => $administrativo_contable,
                     'impositivo' => $impositivo,
                     'previsional' => $previsional,
-                    'recursos' => $recursos,
+                    'gestion_uif' => $gestion_uif,
                     'analisis_reglamentacion' => $analisis_reglamentacion,
                     'informacion_complementaria' => $informacion_complementaria,
                     'jurisprudencia' => $jurisprudencia,

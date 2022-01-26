@@ -85,7 +85,7 @@ export let sections = {
         dataKey: 'gestiones',
         primaryKey: 'id_gestion',
         current: undefined,
-        subsections: ['administrativo_contable', 'impositivo', 'previsional', 'recursos', 'analisis_reglamentacion', 'informacion_complementaria', 'jurisprudencia']
+        subsections: ['administrativo_contable', 'impositivo', 'previsional', 'gestion_uif', 'analisis_reglamentacion', 'informacion_complementaria', 'jurisprudencia']
     },educaciones: {
         id: 'educaciones',
         dataKey: 'educaciones',
@@ -275,7 +275,7 @@ function showInfo(sectionToShow) {
             document.querySelector(`[data-name="id_tipo_gestion-informacion_complementaria"] span:last-child`).innerHTML = sectionToShow.data.informacion_complementaria;
             document.querySelector(`[data-name="id_tipo_gestion-jurisprudencia"] span:last-child`).innerHTML = sectionToShow.data.jurisprudencia;
             document.querySelector(`[data-name="id_tipo_gestion-previsional"] span:last-child`).innerHTML = sectionToShow.data.previsional;
-            document.querySelector(`[data-name="id_tipo_gestion-recursos"] span:last-child`).innerHTML = sectionToShow.data.recursos;
+            document.querySelector(`[data-name="id_tipo_gestion-gestion_uif"] span:last-child`).innerHTML = sectionToShow.data.gestion_uif;
             break;
         case 'tabla_gestiones':
             document.querySelector(`[data-name="id_tipo_gestion-todos"] span:last-child`).innerHTML = sectionToShow.data.total;
@@ -285,7 +285,7 @@ function showInfo(sectionToShow) {
             document.querySelector(`[data-name="id_tipo_gestion-informacion_complementaria"] span:last-child`).innerHTML = sectionToShow.data.informacion_complementaria;
             document.querySelector(`[data-name="id_tipo_gestion-jurisprudencia"] span:last-child`).innerHTML = sectionToShow.data.jurisprudencia;
             document.querySelector(`[data-name="id_tipo_gestion-previsional"] span:last-child`).innerHTML = sectionToShow.data.previsional;
-            document.querySelector(`[data-name="id_tipo_gestion-recursos"] span:last-child`).innerHTML = sectionToShow.data.recursos;
+            document.querySelector(`[data-name="id_tipo_gestion-gestion_uif"] span:last-child`).innerHTML = sectionToShow.data.gestion_uif;
             break;
         case 'tabla_normativas':
             document.querySelector(`[data-name="id_tipo_normativa-todos"] span:last-child`).innerHTML = sectionToShow.data.total;

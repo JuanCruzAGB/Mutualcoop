@@ -1,4 +1,4 @@
-<section id="gestiones" data-sections="administrativo_contable,impositivo,previsional,recursos,analisis_reglamentacion,informacion_complementaria,jurisprudencia" class="tab-content container mx-auto closed">
+<section id="gestiones" data-sections="administrativo_contable,impositivo,previsional,gestion_uif,analisis_reglamentacion,informacion_complementaria,jurisprudencia" class="tab-content container mx-auto closed">
     <header>
         <h2 class="text-center text-3xl">Listado de Gestiones</h2>
     </header>

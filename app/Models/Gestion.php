@@ -54,6 +54,30 @@
         public function vinculos(){
             return $this->hasMany(Vinculo::class, 'id_gestion', 'id_gestion');
         }
+
+        /**
+         * * Scope a query to only include Gestiones by the id_tipo_gestion.
+         * @param  \Illuminate\Database\Eloquent\Builder  $query
+         * @param  int  $id_user
+         * @return \Illuminate\Database\Eloquent\Builder
+         */
+        public function scopeByTipo ($query, int $id_tipo_gestion) {
+            return $query->where('id_tipo_gestion', $id_tipo_gestion);
+        }
+
+        /**
+         * * Scope a query to only include Gestiones by the User.
+         * @param  \Illuminate\Database\Eloquent\Builder  $query
+         * @param  int  $id_user
+         * @return \Illuminate\Database\Eloquent\Builder
+         */
+        public function scopeByUser ($query, int $id_user) {
+            return $query->Join('vinculos', 'vinculos.id_gestion', '=', 'gestiones.id_gestion')
+                ->Join('obras', 'vinculos.id_obra', '=', 'obras.id_obra')
+                ->Join('suscripciones', 'obras.id_obra', '=', 'suscripciones.id_obra')
+                ->Join('users', 'suscripciones.id_usuario', '=', 'users.id_usuario')
+                ->where('users.id_usuario', $id_user);
+        }
         
         /** @var array The validation rules & messages. */
         public static $validation = [

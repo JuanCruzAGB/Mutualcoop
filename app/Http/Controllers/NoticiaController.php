@@ -29,7 +29,7 @@
         }
 
         public function listado(){
-            $noticias = Noticia::orderBy('updated_at', 'DESC')->limit(6)->get();
+            $noticias = Noticia::orderBy('updated_at', 'DESC')->get();
 
             foreach($noticias as $noticia){
                 $noticia->minified = (object) [

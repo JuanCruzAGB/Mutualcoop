@@ -18,9 +18,9 @@
             <span>Previsional</span>
             <span class="background background-tres flex justify-center items-center floating-number text-center float-right rounded-full h-8 w-8 text-white">{{$data->previsional}}</span>
         </button></li>
-        <li><button data-name="id_tipo_gestion-recursos" data-target="id_tipo_gestion" value=7 class="filter filter-button block w-full text-left p-2">
-            <span>Recurso</span>
-            <span class="background background-tres flex justify-center items-center floating-number text-center float-right rounded-full h-8 w-8 text-white">{{$data->recursos}}</span>
+        <li><button data-name="id_tipo_gestion-gestion_uif" data-target="id_tipo_gestion" value=7 class="filter filter-button block w-full text-left p-2">
+            <span>Gestión UIF</span>
+            <span class="background background-tres flex justify-center items-center floating-number text-center float-right rounded-full h-8 w-8 text-white">{{$data->gestion_uif}}</span>
         </button></li>
         <li><button data-name="id_tipo_gestion-analisis_reglamentacion" data-target="id_tipo_gestion" value=8 class="filter filter-button block w-full text-left p-2">
             <span>Análisis de la Reglamentación</span>
