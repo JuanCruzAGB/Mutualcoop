@@ -8,6 +8,7 @@
          * @return void
          */
         public function run () {
-            $this->call(\Database\Seeders\UserSeeder::class);
+            $this->call(\Database\Seeders\ConexionesSeeder::class);
+            $this->call(\Database\Seeders\GestionesSeeder::class);
         }
     }
