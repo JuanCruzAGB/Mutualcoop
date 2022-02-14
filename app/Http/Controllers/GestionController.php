@@ -46,7 +46,7 @@
             }
 
             if ($tipo_slug) {
-                $current = ucfirst($tipo_slug);
+                $current = $tipo->nombre;
             } else {
                 $current = 'undefined';
             }
